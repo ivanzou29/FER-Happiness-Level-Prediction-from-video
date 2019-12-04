@@ -17,8 +17,6 @@ def detect_face_and_regions(img_path):
     # detect faces in the grayscale image
     rects = detector(gray, 1)
 
-    print(rects)
-
     # loop over the face detections
     for (i, rect) in enumerate(rects):
 
@@ -34,7 +32,7 @@ def detect_face_and_regions(img_path):
         for (name, (i, j)) in face_utils.FACIAL_LANDMARKS_IDXS.items():
             # clone the original image so we can draw on it, then
             # display the name of the face part on the image
-            print(name)
+
             if (name == 'mouth'):
                 (x, y, w, h) = cv2.boundingRect(np.array([shape[i:j]]))
 
@@ -70,6 +68,3 @@ def detect_face_and_regions(img_path):
                 cv2.waitKey(0)
 
         break
-
-if __name__ == '__main__':
-    detect_face_and_regions('output1.png')
