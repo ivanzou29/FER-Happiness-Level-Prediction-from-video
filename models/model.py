@@ -7,9 +7,18 @@ from torch.optim.lr_scheduler import StepLR
 
 vgg_arch_16 = [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 'M', 512, 512, 512, 'M', 512, 512, 512, 'M5']
 
-class CNN_Net(nn.Module):
-    def __init__(self, ):
-        super(CNN_Net, self).__init__()
+input_channel = 3
+image_size = (224, 224)
+time_step = 16
+
+input_dim = 3
+output_dim = 1
+
+
+class model(nn.Module):
+    def __init__(self, net_arch):
+        super(model, self).__init__()
+        self.net_arch = net_arch
         layers = []
         in_channels = 3
 
@@ -25,20 +34,20 @@ class CNN_Net(nn.Module):
         self.vgg = nn.ModuleList(layers)
 
     def forward(self, input_data):
-        x_face = input_data[0]
-        x_nose = input_data[1]
-        x_mouth = input_data[2]
-        x_left_eye = input_data[3]
-        x_right_eye = input_data[4]
+        for x in input_data:
+            x_face = x[0]
+            x_nose = x[1]
+            x_mouth = x[2]
+            x_left_eye = x[3]
+            x_right_eye = x[4]
 
-        for layer in self.vgg:
-            x_face = layer(x_face)
-            x_nose = layer(x_nose)
-            x_mouth = layer(x_mouth)
-            x_left_eye = layer(x_left_eye)
-            x_right_eye = layer(x_right_eye)
+            for layer in self.vgg:
+                x_face = layer(x_face)
+                x_nose = layer(x_nose)
+                x_mouth = layer(x_mouth)
+                x_left_eye = layer(x_left_eye)
+                x_right_eye = layer(x_right_eye)
+            x = torch.cat((x_face, x_nose, x_mouth, x_left_eye, x_right_eye), dim=2)
 
-        x = torch.cat((x_face, x_nose, x_mouth, x_left_eye, x_right_eye), dim=2)
-
-        return x
+        return input_data
 
