@@ -2,7 +2,7 @@ import numpy as np
 import os
 import cv2
 import math
-
+import torch
 face = 'face.png'
 nose = 'nose.png'
 mouth = 'mouth.png'
@@ -25,7 +25,10 @@ def read_data(img_dir):
         imgs = []
         dir = os.path.join(img_dir, str(frame_num))
         for region in region_list:
-            imgs.append(cv2.imread(os.path.join(dir, region)))
+            img = cv2.imread(os.path.join(dir, region))
+            if img.shape != (224, 224, 3):
+                img = cv2.resize(img, dsize=(224, 224), interpolation=cv2.INTER_NEAREST)
+            imgs.append(img)
         img_data.append(imgs)
     img_data = np.array(img_data)
     return img_data
@@ -57,6 +60,5 @@ if __name__ == '__main__':
     img_data = read_data(img_dir)
     label = get_label(img_dir)
     unified_data = unify_sequence_length(img_data, standard_length)
-    print(img_data.shape)
-    print(unified_data.shape)
-    print(label)
+
+    print (torch.from_numpy(unified_data[:,0]).shape)
