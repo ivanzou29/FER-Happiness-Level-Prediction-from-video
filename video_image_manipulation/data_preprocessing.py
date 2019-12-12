@@ -2,7 +2,7 @@ import numpy as np
 import os
 import cv2
 import math
-import torch
+
 face = 'face.png'
 nose = 'nose.png'
 mouth = 'mouth.png'
@@ -22,14 +22,18 @@ def read_data(img_dir):
     frame_list.sort()
 
     for frame_num in frame_list:
-        imgs = []
-        dir = os.path.join(img_dir, str(frame_num))
-        for region in region_list:
-            img = cv2.imread(os.path.join(dir, region))
-            if img.shape != (224, 224, 3):
-                img = cv2.resize(img, dsize=(224, 224), interpolation=cv2.INTER_NEAREST)
-            imgs.append(img)
-        img_data.append(imgs)
+        try:
+            imgs = []
+            dir = os.path.join(img_dir, str(frame_num))
+            for region in region_list:
+                img = cv2.imread(os.path.join(dir, region))
+                if img.shape != (224, 224, 3):
+                    img = cv2.resize(img, dsize=(224, 224), interpolation=cv2.INTER_NEAREST)
+                img = np.transpose(img, (2, 0, 1))
+                imgs.append(img)
+            img_data.append(imgs)
+        except:
+            print("skipped one frame in " + img_dir)
     img_data = np.array(img_data)
     return img_data
 
@@ -56,9 +60,19 @@ def get_label(img_dir):
     label = float(img_dir[start:end])
     return label
 
-if __name__ == '__main__':
-    img_data = read_data(img_dir)
-    label = get_label(img_dir)
-    unified_data = unify_sequence_length(img_data, standard_length)
+def get_all_data(main_dir):
+    data = []
+    label = []
+    for img_frames in os.listdir(main_dir):
+        print("loading " + img_frames + "...")
+        img_dir = os.path.join(main_dir, img_frames)
+        data.append(unify_sequence_length(read_data(img_dir), standard_length))
+        label.append(get_label(img_dir))
+    data = np.array(data)
+    label = np.array(label)
+    return data, label
 
-    print (torch.from_numpy(unified_data[:,0]).shape)
+if __name__ == '__main__':
+    data, label = get_all_data('frames')
+    print(data.shape)
+    print(label.shape)
