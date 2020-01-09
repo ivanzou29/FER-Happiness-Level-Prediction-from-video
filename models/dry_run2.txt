@@ -1,0 +1,800 @@
+epoch: 0
+loss: tensor(5.7560, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 1
+loss: tensor(4.5562, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 2
+loss: tensor(3.5857, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 3
+loss: tensor(2.3021, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 4
+loss: tensor(3.7382, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 5
+loss: tensor(3.4047, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 6
+loss: tensor(4.1044, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 7
+loss: tensor(2.6624, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 8
+loss: tensor(3.1823, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 9
+loss: tensor(1.5788, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 10
+loss: tensor(2.6843, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 11
+loss: tensor(2.5767, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 12
+loss: tensor(2.9941, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 13
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 14
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 15
+loss: tensor(1.7303, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 16
+loss: tensor(2.3941, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 17
+loss: tensor(2.9642, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 18
+loss: tensor(2.5966, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 19
+loss: tensor(2.4564, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 20
+loss: tensor(1.9663, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 21
+loss: tensor(1.6592, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 22
+loss: tensor(1.6247, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 23
+loss: tensor(3.5875, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 24
+loss: tensor(2.8600, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 25
+loss: tensor(2.2555, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 26
+loss: tensor(3.0225, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 27
+loss: tensor(2.1454, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 28
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 29
+loss: tensor(2.9425, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 30
+loss: tensor(2.6547, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 31
+loss: tensor(2.3646, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 32
+loss: tensor(2.1561, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 33
+loss: tensor(1.4296, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 34
+loss: tensor(1.8920, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 35
+loss: tensor(2.9263, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 36
+loss: tensor(2.9057, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 37
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 38
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 39
+loss: tensor(1.5202, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 40
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 41
+loss: tensor(2.8200, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 42
+loss: tensor(2.9235, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 43
+loss: tensor(2.3423, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 44
+loss: tensor(2.3694, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 45
+loss: tensor(1.3531, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 46
+loss: tensor(2.1050, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 47
+loss: tensor(2.7965, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 48
+loss: tensor(2.9195, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 49
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 50
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 51
+loss: tensor(1.6318, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 52
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 53
+loss: tensor(2.8462, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 54
+loss: tensor(2.7685, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 55
+loss: tensor(2.3129, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 56
+loss: tensor(2.2173, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 57
+loss: tensor(1.4170, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 58
+loss: tensor(1.8758, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 59
+loss: tensor(2.9953, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 60
+loss: tensor(2.8763, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 61
+loss: tensor(2.0969, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 62
+loss: tensor(2.8765, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 63
+loss: tensor(1.6677, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 64
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 65
+loss: tensor(2.8364, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 66
+loss: tensor(2.8068, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 67
+loss: tensor(2.2948, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 68
+loss: tensor(2.2740, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 69
+loss: tensor(1.3880, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 70
+loss: tensor(1.9941, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 71
+loss: tensor(2.8744, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 72
+loss: tensor(2.9070, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 73
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 74
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 75
+loss: tensor(1.6026, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 76
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 77
+loss: tensor(2.8253, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 78
+loss: tensor(2.8197, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 79
+loss: tensor(2.2970, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 80
+loss: tensor(2.2711, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 81
+loss: tensor(1.3927, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 82
+loss: tensor(1.9631, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 83
+loss: tensor(2.9161, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 84
+loss: tensor(2.8942, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 85
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 86
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 87
+loss: tensor(1.6584, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 88
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 89
+loss: tensor(2.8469, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 90
+loss: tensor(2.7738, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 91
+loss: tensor(2.3070, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 92
+loss: tensor(2.2348, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 93
+loss: tensor(1.4056, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 94
+loss: tensor(1.9309, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 95
+loss: tensor(2.9312, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 96
+loss: tensor(2.8942, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 97
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 98
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 99
+loss: tensor(1.6305, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 100
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 101
+loss: tensor(2.8329, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 102
+loss: tensor(2.8059, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 103
+loss: tensor(2.2909, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 104
+loss: tensor(2.2600, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 105
+loss: tensor(1.3977, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 106
+loss: tensor(1.9453, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 107
+loss: tensor(2.9319, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 108
+loss: tensor(2.8906, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 109
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 110
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 111
+loss: tensor(1.6661, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 112
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 113
+loss: tensor(2.8490, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 114
+loss: tensor(2.7700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 115
+loss: tensor(2.3088, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 116
+loss: tensor(2.2316, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 117
+loss: tensor(1.4070, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 118
+loss: tensor(1.9259, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 119
+loss: tensor(2.9356, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 120
+loss: tensor(2.8932, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 121
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 122
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 123
+loss: tensor(1.6327, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 124
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 125
+loss: tensor(2.8335, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 126
+loss: tensor(2.8048, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 127
+loss: tensor(2.2904, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 128
+loss: tensor(2.2591, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 129
+loss: tensor(1.3981, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 130
+loss: tensor(1.9440, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 131
+loss: tensor(2.9331, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 132
+loss: tensor(2.8904, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 133
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 134
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 135
+loss: tensor(1.6667, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 136
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 137
+loss: tensor(2.8492, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 138
+loss: tensor(2.7697, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 139
+loss: tensor(2.3089, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 140
+loss: tensor(2.2314, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 141
+loss: tensor(1.4071, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 142
+loss: tensor(1.9255, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 143
+loss: tensor(2.9359, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 144
+loss: tensor(2.8931, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 145
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 146
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 147
+loss: tensor(1.6328, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 148
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 149
+loss: tensor(2.8335, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 150
+loss: tensor(2.8048, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 151
+loss: tensor(2.2903, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 152
+loss: tensor(2.2590, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 153
+loss: tensor(1.3981, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 154
+loss: tensor(1.9439, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 155
+loss: tensor(2.9331, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 156
+loss: tensor(2.8904, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 157
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 158
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 159
+loss: tensor(1.6666, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 160
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 161
+loss: tensor(2.8492, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 162
+loss: tensor(2.7697, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 163
+loss: tensor(2.3089, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 164
+loss: tensor(2.2314, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 165
+loss: tensor(1.4071, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 166
+loss: tensor(1.9255, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 167
+loss: tensor(2.9359, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 168
+loss: tensor(2.8931, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 169
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 170
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 171
+loss: tensor(1.6328, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 172
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 173
+loss: tensor(2.8335, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 174
+loss: tensor(2.8048, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 175
+loss: tensor(2.2903, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 176
+loss: tensor(2.2590, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 177
+loss: tensor(1.3981, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 178
+loss: tensor(1.9440, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 179
+loss: tensor(2.9330, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 180
+loss: tensor(2.8904, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 181
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 182
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 183
+loss: tensor(1.6666, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 184
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 185
+loss: tensor(2.8491, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 186
+loss: tensor(2.7698, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 187
+loss: tensor(2.3089, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 188
+loss: tensor(2.2314, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 189
+loss: tensor(1.4071, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 190
+loss: tensor(1.9255, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 191
+loss: tensor(2.9359, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 192
+loss: tensor(2.8931, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 193
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 194
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 195
+loss: tensor(1.6328, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 196
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 197
+loss: tensor(2.8335, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 198
+loss: tensor(2.8048, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 199
+loss: tensor(2.2903, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 200
+loss: tensor(2.2590, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 201
+loss: tensor(1.3981, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 202
+loss: tensor(1.9440, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 203
+loss: tensor(2.9329, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 204
+loss: tensor(2.8904, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 205
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 206
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 207
+loss: tensor(1.6666, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 208
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 209
+loss: tensor(2.8491, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 210
+loss: tensor(2.7698, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 211
+loss: tensor(2.3089, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 212
+loss: tensor(2.2314, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 213
+loss: tensor(1.4071, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 214
+loss: tensor(1.9255, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 215
+loss: tensor(2.9359, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 216
+loss: tensor(2.8932, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 217
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 218
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 219
+loss: tensor(1.6327, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 220
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 221
+loss: tensor(2.8335, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 222
+loss: tensor(2.8048, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 223
+loss: tensor(2.2903, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 224
+loss: tensor(2.2591, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 225
+loss: tensor(1.3981, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 226
+loss: tensor(1.9441, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 227
+loss: tensor(2.9329, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 228
+loss: tensor(2.8904, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 229
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 230
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 231
+loss: tensor(1.6665, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 232
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 233
+loss: tensor(2.8491, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 234
+loss: tensor(2.7698, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 235
+loss: tensor(2.3089, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 236
+loss: tensor(2.2314, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 237
+loss: tensor(1.4071, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 238
+loss: tensor(1.9256, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 239
+loss: tensor(2.9358, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 240
+loss: tensor(2.8932, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 241
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 242
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 243
+loss: tensor(1.6327, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 244
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 245
+loss: tensor(2.8335, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 246
+loss: tensor(2.8048, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 247
+loss: tensor(2.2903, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 248
+loss: tensor(2.2591, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 249
+loss: tensor(1.3981, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 250
+loss: tensor(1.9441, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 251
+loss: tensor(2.9328, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 252
+loss: tensor(2.8904, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 253
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 254
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 255
+loss: tensor(1.6665, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 256
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 257
+loss: tensor(2.8491, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 258
+loss: tensor(2.7698, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 259
+loss: tensor(2.3088, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 260
+loss: tensor(2.2314, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 261
+loss: tensor(1.4070, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 262
+loss: tensor(1.9256, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 263
+loss: tensor(2.9358, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 264
+loss: tensor(2.8932, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 265
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 266
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 267
+loss: tensor(1.6327, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 268
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 269
+loss: tensor(2.8335, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 270
+loss: tensor(2.8048, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 271
+loss: tensor(2.2903, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 272
+loss: tensor(2.2591, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 273
+loss: tensor(1.3981, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 274
+loss: tensor(1.9442, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 275
+loss: tensor(2.9328, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 276
+loss: tensor(2.8904, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 277
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 278
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 279
+loss: tensor(1.6665, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 280
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 281
+loss: tensor(2.8491, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 282
+loss: tensor(2.7698, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 283
+loss: tensor(2.3088, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 284
+loss: tensor(2.2315, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 285
+loss: tensor(1.4070, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 286
+loss: tensor(1.9256, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 287
+loss: tensor(2.9358, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 288
+loss: tensor(2.8932, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 289
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 290
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 291
+loss: tensor(1.6327, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 292
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 293
+loss: tensor(2.8335, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 294
+loss: tensor(2.8048, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 295
+loss: tensor(2.2903, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 296
+loss: tensor(2.2591, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 297
+loss: tensor(1.3980, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 298
+loss: tensor(1.9442, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 299
+loss: tensor(2.9327, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 300
+loss: tensor(2.8905, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 301
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 302
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 303
+loss: tensor(1.6665, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 304
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 305
+loss: tensor(2.8491, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 306
+loss: tensor(2.7698, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 307
+loss: tensor(2.3088, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 308
+loss: tensor(2.2315, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 309
+loss: tensor(1.4070, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 310
+loss: tensor(1.9257, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 311
+loss: tensor(2.9357, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 312
+loss: tensor(2.8932, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 313
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 314
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 315
+loss: tensor(1.6326, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 316
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 317
+loss: tensor(2.8335, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 318
+loss: tensor(2.8048, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 319
+loss: tensor(2.2903, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 320
+loss: tensor(2.2591, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 321
+loss: tensor(1.3980, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 322
+loss: tensor(1.9443, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 323
+loss: tensor(2.9327, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 324
+loss: tensor(2.8905, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 325
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 326
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 327
+loss: tensor(1.6664, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 328
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 329
+loss: tensor(2.8491, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 330
+loss: tensor(2.7699, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 331
+loss: tensor(2.3088, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 332
+loss: tensor(2.2315, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 333
+loss: tensor(1.4070, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 334
+loss: tensor(1.9257, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 335
+loss: tensor(2.9357, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 336
+loss: tensor(2.8932, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 337
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 338
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 339
+loss: tensor(1.6326, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 340
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 341
+loss: tensor(2.8334, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 342
+loss: tensor(2.8049, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 343
+loss: tensor(2.2904, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 344
+loss: tensor(2.2591, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 345
+loss: tensor(1.3980, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 346
+loss: tensor(1.9443, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 347
+loss: tensor(2.9327, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 348
+loss: tensor(2.8905, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 349
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 350
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 351
+loss: tensor(1.6664, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 352
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 353
+loss: tensor(2.8491, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 354
+loss: tensor(2.7699, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 355
+loss: tensor(2.3088, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 356
+loss: tensor(2.2315, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 357
+loss: tensor(1.4070, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 358
+loss: tensor(1.9257, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 359
+loss: tensor(2.9357, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 360
+loss: tensor(2.8932, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 361
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 362
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 363
+loss: tensor(1.6326, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 364
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 365
+loss: tensor(2.8334, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 366
+loss: tensor(2.8049, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 367
+loss: tensor(2.2904, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 368
+loss: tensor(2.2591, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 369
+loss: tensor(1.3980, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 370
+loss: tensor(1.9443, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 371
+loss: tensor(2.9326, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 372
+loss: tensor(2.8905, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 373
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 374
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 375
+loss: tensor(1.6664, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 376
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 377
+loss: tensor(2.8491, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 378
+loss: tensor(2.7699, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 379
+loss: tensor(2.3088, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 380
+loss: tensor(2.2315, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 381
+loss: tensor(1.4070, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 382
+loss: tensor(1.9257, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 383
+loss: tensor(2.9357, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 384
+loss: tensor(2.8932, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 385
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 386
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 387
+loss: tensor(1.6326, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 388
+loss: tensor(2.4100, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 389
+loss: tensor(2.8334, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 390
+loss: tensor(2.8049, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 391
+loss: tensor(2.2904, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 392
+loss: tensor(2.2591, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 393
+loss: tensor(1.3980, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 394
+loss: tensor(1.9444, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 395
+loss: tensor(2.9326, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 396
+loss: tensor(2.8905, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 397
+loss: tensor(2.0900, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 398
+loss: tensor(2.8700, device='cuda:0', grad_fn=<L1LossBackward>)
+epoch: 399
+loss: tensor(1.6664, device='cuda:0', grad_fn=<L1LossBackward>)

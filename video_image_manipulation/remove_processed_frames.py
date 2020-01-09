@@ -1,7 +1,7 @@
 import os
 
 
-main_dir = 'frames'
+main_dir = '/home/yunfan/frames'
 
 def remove_frames(main_dir):
     for frame in os.listdir(main_dir):

@@ -8,8 +8,8 @@ nose = 'nose.png'
 mouth = 'mouth.png'
 left_eye = 'lefy_eye.png'
 right_eye = 'right_eye.png'
-region_list = ['face.png', 'nose.png', 'mouth.png', 'left_eye.png', 'right_eye.png']
-standard_length = 16
+region_list = ['face.png']
+standard_length = 10
 
 img_dir = '/Users/ivanreal/PycharmProjects/Happiness-Level-Prediction-from-video-repo/video_image_manipulation/frames/9.2_00372925'
 def read_data(img_dir):
@@ -45,6 +45,8 @@ def unify_sequence_length(data, standard_length):
         index = special_round(i * interval)
         if (index == original_length):
             index = index - 1
+        index = int(index)
+        print("index is: " + str(index))
         cropped_data.append(data[index])
     return np.array(cropped_data)
 
@@ -63,11 +65,15 @@ def get_label(img_dir):
 def get_all_data(main_dir):
     data = []
     label = []
+    i = 0
     for img_frames in os.listdir(main_dir):
         print("loading " + img_frames + "...")
         img_dir = os.path.join(main_dir, img_frames)
         data.append(unify_sequence_length(read_data(img_dir), standard_length))
         label.append(get_label(img_dir))
+        i = i + 1
+        if (i >= 32):
+            break
     data = np.array(data)
     label = np.array(label)
     return data, label
