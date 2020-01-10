@@ -1,6 +1,7 @@
 import sys
 sys.path.insert(1, '/home/yunfan/FER-Happiness-Level-Prediction-from-video/video_image_manipulation')
 
+import numpy as np
 import torch.nn as nn
 import torch.nn.functional as F
 import torch
@@ -8,8 +9,8 @@ import data_preprocessing
 from torch.autograd import Variable
 
 vgg_arch_16 = [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 'M', 512, 512, 512, 'M', 512, 512, 512, 'M']
-EPOCH = 20
-BATCH_SIZE = 32
+EPOCH = 200
+BATCH_SIZE = 1
 main_dir = "/data0/yunfan/frames"
 
 class CNN(nn.Module):
@@ -50,7 +51,7 @@ class CNN(nn.Module):
 
         del drop
 
-        drop_flatten = F.relu(self.fc1(drop_flatten))
+        drop_flatten = F.relu(self.fc1(drop_flatten), inplace=True)
 
         return F.log_softmax(drop_flatten, dim=1)
 
@@ -59,7 +60,7 @@ class CompoundModel(nn.Module):
         super(CompoundModel, self).__init__()
         self.cnn = CNN(vgg_arch_16)
         self.rnn = nn.LSTM(input_size= 5, hidden_size=10, num_layers=1, batch_first=True)
-        self.linear = nn.Linear(20, 1)
+        self.linear = nn.Linear(10, 1)
 
     def forward(self, x):
         batch_size = BATCH_SIZE
@@ -92,12 +93,17 @@ class CompoundModel(nn.Module):
 if __name__ == '__main__':
     model = CompoundModel()
     model = model.float()
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
-    loss_func = torch.nn.L1Loss()
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+    loss_func = torch.nn.MSELoss()
     my_data, my_label = data_preprocessing.get_all_data(main_dir)
-    my_data = my_data[:, :, 0].astype(float)
+    my_data = my_data
+    my_label = my_label
+    my_data = my_data[:, :, 0]
     my_label = my_label.reshape(-1, 1)
-    my_data, my_label = Variable(torch.from_numpy(my_data)).float().to(dtype=torch.float16), Variable(torch.from_numpy(my_label)).float().to(dtype=torch.float16)
+
+    print(np.any(np.isnan(my_data)))
+    print(np.any(np.isnan(my_label))) 
+    my_data, my_label = Variable(torch.from_numpy(my_data)).int(), Variable(torch.from_numpy(my_label)).float()
     if torch.cuda.is_available():
         model = model.cuda()
         my_data = my_data.cuda()
@@ -106,16 +112,19 @@ if __name__ == '__main__':
     # print(my_data.shape)
 
     for i in range(EPOCH):
-        optimizer.zero_grad()
         print("Epoch = " + str(i))
         f = open("dry_run3.txt", 'a')
         f.write("epoch: " + str(i) + "\n")
-        starting_index = (i % 1) * BATCH_SIZE
-        prediction = model(my_data)
-        loss = loss_func(prediction, my_label)
+        starting_index = (i % 40) * BATCH_SIZE
+        print(my_data[starting_index: (starting_index + BATCH_SIZE)].size())
+        print(my_label[starting_index : (starting_index + BATCH_SIZE)].size())
+
+        prediction = model(my_data[starting_index:(starting_index + BATCH_SIZE)])
+        loss = loss_func(prediction, my_label[starting_index: (starting_index + BATCH_SIZE)])
         loss.backward()
         f.write("loss: " + str(loss) + "\n")
         print("loss: " + str(loss) + "\n")
         optimizer.step()
+        optimizer.zero_grad()
         f.close()
 

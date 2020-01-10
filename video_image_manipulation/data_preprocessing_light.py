@@ -11,7 +11,6 @@ right_eye = 'right_eye.png'
 region_list = ['face.png']
 standard_length = 10
 
-img_dir = '/Users/ivanreal/PycharmProjects/Happiness-Level-Prediction-from-video-repo/video_image_manipulation/frames/9.2_00372925'
 def read_data(img_dir):
     img_data = []
     frame_list = []
@@ -27,8 +26,8 @@ def read_data(img_dir):
             dir = os.path.join(img_dir, str(frame_num))
             for region in region_list:
                 img = cv2.imread(os.path.join(dir, region))
-                if img.shape != (224, 224, 3):
-                    img = cv2.resize(img, dsize=(224, 224), interpolation=cv2.INTER_NEAREST)
+                if img.shape != (56, 56, 3):
+                    img = cv2.resize(img, dsize=(56, 56), interpolation=cv2.INTER_NEAREST)
                 img = np.transpose(img, (2, 0, 1))
                 imgs.append(img)
             img_data.append(imgs)
@@ -65,15 +64,11 @@ def get_label(img_dir):
 def get_all_data(main_dir):
     data = []
     label = []
-    i = 0
     for img_frames in os.listdir(main_dir):
         print("loading " + img_frames + "...")
         img_dir = os.path.join(main_dir, img_frames)
         data.append(unify_sequence_length(read_data(img_dir), standard_length))
         label.append(get_label(img_dir))
-        i = i + 1
-        if (i >= 40):
-            break
     data = np.array(data)
     label = np.array(label)
     return data, label
