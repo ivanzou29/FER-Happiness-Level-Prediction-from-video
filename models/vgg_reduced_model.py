@@ -10,7 +10,7 @@ from torch.utils.data import TensorDataset, DataLoader
 from torch.autograd import Variable
 
 my_vgg_arch = [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 'M']
-EPOCH = 20
+EPOCH = 200
 BATCH_SIZE = 40
 main_dir = "/data0/yunfan/frames"
 val_dir = "/data0/yunfan/val_frames"
@@ -91,7 +91,7 @@ if __name__ == '__main__':
     model = CompoundModel()
     model = model.float()
     optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
-    loss_func = torch.nn.MSELoss()
+    criterion = torch.nn.MSELoss()
     my_data, my_label = data_preprocessing_light.get_all_data(main_dir)
     val_data, val_label = data_preprocessing_light.get_all_data(val_dir)
     my_data = my_data[:, :, 0]
@@ -111,8 +111,15 @@ if __name__ == '__main__':
         val_label = val_label.cuda()
 
     my_dataset = TensorDataset(my_data, my_label)
-    loader = DataLoader(
+    train_loader = DataLoader(
             dataset=my_dataset,
+            batch_size=BATCH_SIZE,
+            shuffle=True
+    )
+
+    val_dataset = TensorDataset(val_data, val_label)
+    val_loader = DataLoader(
+            dataset=val_dataset,
             batch_size=BATCH_SIZE,
             shuffle=True
     )
@@ -133,10 +140,25 @@ if __name__ == '__main__':
         # optimizer.step()
         # optimizer.zero_grad()
         # f.close()
-        for step, (batch_x, batch_y) in enumerate(loader):
-            print('| Step: ', step)
-            # optimizer.zero_grad()
-            # prediction = model(batch_x)
-            # loss = loss_function(prediction, batch_y)
-            # loss.backward()
+        for step, (batch_x, batch_y) in enumerate(train_loader):
+            
+            print('Epoch: ', i+1, '| Step: ', step)
+            optimizer.zero_grad()
+            training_prediction = model(batch_x)
+            training_loss = criterion(training_prediction, batch_y)
+            
+            val_losses = []
+            for batch, (val_x, val_y) in enumerate(val_loader):
+                if (batch == len(val_loader) - 1):
+                    break
+                val_prediction = model(val_x)
+                val_loss = criterion(val_prediction, val_y)
+                val_losses.append(val_loss.item())
+            
+            val_losses = np.array(val_losses)
+            val_loss = np.mean(val_losses)
+            training_loss.backward()
+            optimizer.step()
+            print ('Training loss: ', training_loss.item())
+            print ('Validation loss: ', val_loss)
 
