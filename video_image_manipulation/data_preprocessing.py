@@ -3,6 +3,8 @@ import os
 import cv2
 import math
 
+from matplotlib import pyplot as plt
+
 face = 'face.png'
 nose = 'nose.png'
 mouth = 'mouth.png'
@@ -65,18 +67,20 @@ def get_label(img_dir):
 def get_all_data(main_dir):
     data = []
     label = []
-    i = 0
     for img_frames in os.listdir(main_dir):
         print("loading " + img_frames + "...")
         img_dir = os.path.join(main_dir, img_frames)
         data.append(unify_sequence_length(read_data(img_dir), standard_length))
         label.append(get_label(img_dir))
-        i = i + 1
-        if (i >= 40):
-            break
     data = np.array(data)
     label = np.array(label)
     return data, label
 
 if __name__ == '__main__':
-    data, label = get_all_data('frames')
+    data, label = get_all_data('/data0/yunfan/frames')
+    val_data, val_label = get_all_data('/data0/yunfan/val_frames')
+    plt.hist(val_label, bins=10, range=(0,10), facecolor="blue", edgecolor="black")
+    plt.xlabel("Number of instances")
+    plt.ylabel("Happiness Level")
+    plt.title("Validation data histogram")
+    plt.savefig("Validation data histogram.png")

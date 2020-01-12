@@ -6,12 +6,14 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch
 import data_preprocessing_light
+
+from matplotlib import pyplot as plt
 from torch.utils.data import TensorDataset, DataLoader
 from torch.autograd import Variable
 
 my_vgg_arch = [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 'M']
-EPOCH = 200
-BATCH_SIZE = 40
+EPOCH = 50
+BATCH_SIZE = 20
 main_dir = "/data0/yunfan/frames"
 val_dir = "/data0/yunfan/val_frames"
 
@@ -91,7 +93,7 @@ if __name__ == '__main__':
     model = CompoundModel()
     model = model.float()
     optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
-    criterion = torch.nn.MSELoss()
+    criterion = torch.nn.L1Loss()
     my_data, my_label = data_preprocessing_light.get_all_data(main_dir)
     val_data, val_label = data_preprocessing_light.get_all_data(val_dir)
     my_data = my_data[:, :, 0]
@@ -124,22 +126,10 @@ if __name__ == '__main__':
             shuffle=True
     )
 
-    for i in range(EPOCH):
-        print("Epoch = " + str(i+1))
-        # f = open("dry_run3.txt", 'a')
-        # f.write("epoch: " + str(i) + "\n")
-        # starting_index = (i % 8) * BATCH_SIZE
-        # print(my_data[starting_index: (starting_index + BATCH_SIZE)].size())
-        # print(my_label[starting_index : (starting_index + BATCH_SIZE)].size())
+    training_loss_iteration = []
+    validation_loss_iteration = []
 
-        # prediction = model(my_data[starting_index:(starting_index + BATCH_SIZE)])
-        # loss = loss_func(prediction, my_label[starting_index: (starting_index + BATCH_SIZE)])
-        # loss.backward()
-        # f.write("loss: " + str(loss) + "\n")
-        # print("loss: " + str(loss) + "\n")
-        # optimizer.step()
-        # optimizer.zero_grad()
-        # f.close()
+    for i in range(EPOCH):
         for step, (batch_x, batch_y) in enumerate(train_loader):
             
             print('Epoch: ', i+1, '| Step: ', step)
@@ -159,6 +149,25 @@ if __name__ == '__main__':
             val_loss = np.mean(val_losses)
             training_loss.backward()
             optimizer.step()
+            training_loss_iteration.append(training_loss.item())
+            validation_loss_iteration.append(val_loss)
             print ('Training loss: ', training_loss.item())
             print ('Validation loss: ', val_loss)
+
+    iterations = len(training_loss_iteration)
+    iteration = np.arange(iterations)
+
+    training_loss_iteration = np.array(training_loss_iteration)
+    validation_loss_iteration = np.array(validation_loss_iteration)
+
+    train_history, = plt.plot(iteration, training_loss_iteration, 'r')
+    val_history, = plt.plot(iteration, validation_loss_iteration, 'b')
+    plt.xlabel('iterations')
+    plt.ylabel('loss')
+    plt.legend([train_history, val_history], ["training_loss", "validation_loss"], loc = 'upper right')
+    name = 'training_history_BatchSize=' + str(BATCH_SIZE) + '_Epoch=' + str(EPOCH) 
+    plt.title(name)
+    plt.savefig(name + '.png')
+    
+
 
