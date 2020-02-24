@@ -69,9 +69,8 @@ class CompoundModel(nn.Module):
         self.cnn_left_eye = CNN(my_vgg_arch)
         self.cnn_right_eye = CNN(my_vgg_arch)
         self.cnn_mouth = CNN(my_vgg_arch)
-        self.rnn = nn.LSTM(input_size= 40, hidden_size=10, num_layers=1, batch_first=True)
-        self.linear = nn.Linear(10, 1)
-
+        self.rnn = nn.LSTM(input_size= 40, hidden_size=1, num_layers=1, batch_first=True)
+        self.hidden_cell = 
     def forward(self, x):
         face = x[:, :, 0]
         left_eye = x[:, :, 1]
@@ -114,11 +113,10 @@ class CompoundModel(nn.Module):
 
         r_in = r_in.view(batch_size , time_step, -1)
 
-        r_out, (h_n, h_c) = self.rnn(r_in, None)
+        r_out, self.hidden_cell = self.rnn(r_in, self.hidden_cell)
+        
+        out = self.linear(r_out[:,-1,:])
 
-        del r_in
-        out = self.linear(r_out[:, -1, :])
-        del r_out
         return out
 
 if __name__ == '__main__':
@@ -205,5 +203,32 @@ if __name__ == '__main__':
     plt.title(name)
     plt.savefig(history_dir + name + '.png')
     
+    train_plot_data_loader = DataLoader(
+            dataset=my_dataset,
+            batch_size=BATCH_SIZE,
+            shuffle=False
+    )
+    train_prediction = []
+    for batch, (train_x, train_y) in enumerate(train_plot_data_loader):
+        train_prediction.append(model(train_x).cpu().detach())
+    train_prediction = tuple(train_prediction)
+    train_prediction = torch.cat(train_prediction, dim=0).numpy()
+    train_label = (my_label.cpu()).numpy()
+    train_label = train_label.reshape(len(train_label))
+    train_prediction = train_prediction.reshape(len(train_prediction))
+    
+    plt.figure()
+
+    train_comparison_plot = plt.scatter(train_label, train_prediction, c='blue', alpha=0.6, label='Prediction vs Ground Truth')
+    train_standard_plot = plt.plot([0.0, 11.0], [0.0, 11.0], 'r', label='y=x')
+    train_error_plot1 = plt.plot([0.0, 11.0], [1.0, 12.0], c='green', label='y=x+1', linestyle="-")
+    train_error_plot2 = plt.plot([0.0, 11.0], [-1.0, 10.0], c='green', label='y=x-1', linestyle="-")
+    train_error_plot3 = plt.plot([0.0, 11.0], [2.0, 13.0], c='y', label='y=x+2', linestyle="-")
+    train_error_plot4 = plt.plot([0.0, 11.0], [-2.0, 9.0], c='y', label='y=x-2', linestyle="-")
+
+    plt.xlabel('ground truth')
+    plt.ylabel('prediction')
+    plt.title('Training label comparison')
+    plt.savefig('training_label_comparison.png')
 
 

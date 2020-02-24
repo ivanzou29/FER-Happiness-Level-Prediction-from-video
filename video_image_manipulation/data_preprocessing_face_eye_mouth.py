@@ -6,10 +6,9 @@ import math
 face = 'face.png'
 nose = 'nose.png'
 mouth = 'mouth.png'
-left_eye = 'lefy_eye.png'
+left_eye = 'left_eye.png'
 right_eye = 'right_eye.png'
 region_list = ['face.png', 'left_eye.png', 'mouth.png']
-standard_length = 8
 
 def read_data(img_dir):
     img_data = []
@@ -61,7 +60,7 @@ def get_label(img_dir):
     label = float(img_dir[start:end])
     return label
 
-def get_all_data(main_dir):
+def get_all_data(main_dir, standard_length):
     data = []
     label = []
     for img_frames in os.listdir(main_dir):

@@ -6,9 +6,9 @@ import math
 face = 'face.png'
 nose = 'nose.png'
 mouth = 'mouth.png'
-left_eye = 'left_eye.png'
+left_eye = 'lefy_eye.png'
 right_eye = 'right_eye.png'
-region_list = ['face.png', 'left_eye.png', 'right_eye.png']
+region_list = ['face.png']
 
 def read_data(img_dir):
     img_data = []
