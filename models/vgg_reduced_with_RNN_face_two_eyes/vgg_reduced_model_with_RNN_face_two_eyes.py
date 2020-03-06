@@ -82,7 +82,7 @@ class CNN(nn.Module):
 
         drop_flatten = F.relu(self.fc1(drop_flatten), inplace=True)
 
-        return F.log_softmax(drop_flatten, dim=1)
+        return drop_flatten
 
 class CompoundModel(nn.Module):
     def __init__(self):
@@ -90,8 +90,8 @@ class CompoundModel(nn.Module):
         self.cnn_0 = CNN(my_vgg_arch)
         self.cnn_1 = CNN(my_vgg_arch)
         self.cnn_2 = CNN(my_vgg_arch)
-        self.rnn = nn.LSTM(input_size=3 * FC_LAYER_OUTPUT_NUM, hidden_size=FC_LAYER_OUTPUT_NUM, num_layers=LSTM_LAYERS, batch_first=True)
-        self.linear = nn.Linear(FC_LAYER_OUTPUT_NUM, 1)
+        self.rnn = nn.LSTM(input_size=3 * FC_LAYER_OUTPUT_NUM, hidden_size=FC_LAYER_OUTPUT_NUM * 10, num_layers=LSTM_LAYERS, batch_first=True)
+        self.linear = nn.Linear(FC_LAYER_OUTPUT_NUM * 10, 1)
 
     def forward(self, x):
         C = 3
@@ -127,13 +127,17 @@ class CompoundModel(nn.Module):
         del region2_out
         
         r_in = r_in.view(-1, TIME_STEP, 3 * FC_LAYER_OUTPUT_NUM)
-
+        
+        print("r_in:")
+        print(r_in.shape)
         r_out, (h_n, h_c) = self.rnn(r_in, None)
 
         del r_in
-
+        print("r_out:")
+        print(r_out.shape)
+    
         out = self.linear(r_out[:, -1, :])
-
+    
         del r_out
         return out
 
@@ -189,12 +193,16 @@ if __name__ == '__main__':
     for i in range(EPOCH):
         for step, (batch_x, batch_y) in enumerate(train_loader):
             print('Epoch: ', i+1, '| Step: ', step)
+            print(batch_x.shape)
+            print(batch_y.shape)
             f.write('Epoch: '+ str(i+1) + '| Step: ' + str(step) + '\n')
             optimizer.zero_grad()
 
             training_prediction = model(batch_x)
             training_loss = criterion(training_prediction, batch_y)
             
+            print(training_prediction.size)
+            print(batch_x.size)            
             val_losses = []
             sizes = []
             for batch, (val_x, val_y) in enumerate(val_loader):
