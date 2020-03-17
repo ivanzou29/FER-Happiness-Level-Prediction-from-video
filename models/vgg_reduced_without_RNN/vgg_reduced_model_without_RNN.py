@@ -4,18 +4,20 @@ sys.path.insert(1, '/home/yunfan/FER-Happiness-Level-Prediction-from-video/video
 import argparse
 import os
 import numpy as np
+
 import torch.nn as nn
 import torch.nn.functional as F
 import torch
-import data_preprocessing_face_without_RNN
+import data_preprocessing_face_two_eyes
 
 from math import sqrt as sqrt
 from math import ceil as ceil
 from matplotlib import pyplot as plt
+from sklearn.model_selection import train_test_split
 from torch.utils.data import TensorDataset, DataLoader
 from torch.autograd import Variable
 
-parser = argparse.ArgumentParser(description = "Training batch size and epoch")
+parser = argparse.ArgumentParser(description = "training batch size and epoch")
 parser.add_argument('-b', '--batchsize', type=int, default=40, help='batch size')
 parser.add_argument('-e', '--epoch', type=int, default=30, help='epoch')
 parser.add_argument('-o', '--fcoutput', type=int, default=10, help='fc layer output num')
@@ -35,13 +37,19 @@ DROPOUT = args.dropout
 TIME_STEP = args.timestep
 LEARNING_RATE = args.learningrate
 
-loss_functions = ['MAE', 'RMSE']
-LOSS = loss_functions[args.loss]
+LOSS_FUNCTIONS = ['MAE', 'RMSE']
+LOSS = LOSS_FUNCTIONS[args.loss]
+
+# select the loss function
+if (LOSS == 'RMSE'):
+    criterion = torch.nn.MSELoss()
+else:
+    criterion = torch.nn.L1Loss()
 
 PREFIX = 'training_history_BatchSize=' + str(BATCH_SIZE) + '_Epoch=' + str(EPOCH) + '_FC_Num=' + str(FC_LAYER_OUTPUT_NUM) + '_TimeStep=' + str(TIME_STEP) + '_DropOut=' + str(DROPOUT) + '_LearningRate=' + str(LEARNING_RATE) + '_Loss=' + LOSS
 
-main_dir = "/data0/yunfan/frames"
-val_dir = "/data0/yunfan/val_frames"
+TRAIN_VAL_DIR = "/data0/yunfan/train_frames"
+TEST_DIR = "/data0/yunfan/test_frames"
 
 HISTORY_DIR = "vgg_reduced_model_without_RNN_history/"
 
@@ -127,70 +135,45 @@ class CompoundModel(nn.Module):
 
         return out
 
-if __name__ == '__main__':
-    model = CompoundModel()
-    model = model.float()
-    optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
-    if (LOSS == 'RMSE'):
-        criterion = torch.nn.MSELoss()
-    else:
-        criterion = torch.nn.L1Loss()
-    my_data, my_label = data_preprocessing_face_without_RNN.get_all_data(main_dir, TIME_STEP)
-    val_data, val_label = data_preprocessing_face_without_RNN.get_all_data(val_dir, TIME_STEP)
-    my_data = my_data[:, :, 0]
-    my_label = my_label.reshape(-1, 1)
+def set_bn_eval(m):
+    if isinstance(m, nn.modules.batchnorm._BatchNorm):
+        m.eval()
 
-    print(my_data.shape)
-    print(my_label.shape)
-    print(val_data.shape)
-    print(val_label.shape)
+def set_bn_train(m):
+    if isinstance(m, nn.modules.batchnorm._BatchNorm):
+        m.train()
 
-    my_data, my_label = Variable(torch.from_numpy(my_data)).int(), Variable(torch.from_numpy(my_label)).float()
-    val_data = val_data[:, :, 0]
+def train_val_split(my_data, my_label):
+    train_data, val_data, train_label, val_label = train_test_split(my_data, my_label, test_size = 0.30, random_state = 42)
+    train_label = train_label.reshape(-1, 1)
     val_label = val_label.reshape(-1, 1)
-    val_data, val_label = Variable(torch.from_numpy(val_data)).int(), Variable(torch.from_numpy(val_label)).float()
-    if torch.cuda.is_available():
-        model = model.cuda()
-        my_data = my_data.cuda()
-        my_label = my_label.cuda()
-        val_data = val_data.cuda()
-        val_label = val_label.cuda()
+    return train_data, train_label, val_data, val_label
 
-    my_dataset = TensorDataset(my_data, my_label)
-    train_loader = DataLoader(
-            dataset=my_dataset,
-            batch_size=BATCH_SIZE,
-            shuffle=True
-    )
+def training(model, train_loader, val_loader, test_loader):
 
-    val_dataset = TensorDataset(val_data, val_label)
-    val_loader = DataLoader(
-            dataset=val_dataset,
-            batch_size=BATCH_SIZE,
-            shuffle=True
-    )
-
+    # prepare for training
     training_loss_iteration = []
     validation_loss_iteration = []
-
     os.system('mkdir ' + HISTORY_DIR + PREFIX + '/')
-
     f = open(HISTORY_DIR + PREFIX + '/history.txt', 'w+')
+
+    # training
     for i in range(EPOCH):
         for step, (batch_x, batch_y) in enumerate(train_loader):
             print('Epoch: ', i+1, '| Step: ', step)
             f.write('Epoch: '+ str(i+1) + '| Step: ' + str(step) + '\n')
             optimizer.zero_grad()
+
             training_prediction = model(batch_x)
             training_loss = criterion(training_prediction, batch_y)
             
+            print(training_prediction)
+            print(batch_y)            
             val_losses = []
             sizes = []
             for batch, (val_x, val_y) in enumerate(val_loader):
                 val_prediction = model(val_x)
                 val_loss = criterion(val_prediction, val_y).item()
-                if (LOSS == 'RMSE'):
-                    val_loss = sqrt(val_loss)
                 val_losses.append(val_loss)
                 sizes.append(len(val_y))
 
@@ -201,11 +184,13 @@ if __name__ == '__main__':
                 val_loss_size = val_loss_size + sizes[i]
 
             val_loss_item = val_loss_sum / val_loss_size
+
             training_loss.backward()
             optimizer.step()
 
             if (LOSS == 'RMSE'):
                 training_loss_item = sqrt(training_loss.item())
+                val_loss_item = sqrt(val_loss_item)
             else:
                 training_loss_item = training_loss.item()
 
@@ -215,16 +200,40 @@ if __name__ == '__main__':
             print('Training loss: ', str(training_loss_item))
             f.write('Training loss: ' +  str(training_loss_item) + '\n')
             print('Validation loss: ', str(val_loss_item))
-            f.write('Validation loss: ' + str(val_loss_item) + '\n')
+            f.write('Validation loss: ' + str(val_loss_item) + '\n\n')
+
+    test_losses = []
+    test_sizes = []
+    for batch, (test_x, test_y) in enumerate(test_loader):
+        test_prediction = model(test_x)
+        test_loss = criterion(test_prediction, test_y).item()
+        test_losses.append(test_loss)
+        test_sizes.append(len(test_y))
+
+    test_loss_sum = 0
+    test_loss_size = 0
+    for i in range(len(test_losses)):
+        test_loss_sum = test_loss_sum + test_losses[i] * test_sizes[i]
+        test_loss_size = test_loss_size + test_sizes[i]
+
+    test_loss_item = test_loss_sum / test_loss_size
+    if (LOSS == 'RMSE'):
+        test_loss_item = sqrt(test_loss_item)
+    print('Testing loss: ' + str(test_loss_item))
+    f.write('Testing loss: ' + str(test_loss_item) + '\n')
+    f.close()
+
 
     iterations = len(training_loss_iteration)
     iteration = np.arange(iterations)
-
-    f.close()
-
     training_loss_iteration = np.array(training_loss_iteration)
     validation_loss_iteration = np.array(validation_loss_iteration)
     
+    return training_loss_iteration, validation_loss_iteration, iteration
+
+
+def plot_training_history(training_loss_iteration, validation_loss_iteration, iteration):
+    plt.style.use('ggplot')
     plt.figure()
 
     train_history, = plt.plot(iteration, training_loss_iteration, 'r')
@@ -236,57 +245,134 @@ if __name__ == '__main__':
     plt.title('history plot')
     plt.savefig(history_plot_name + '.png')
 
+# plot the comparison between predicted result and ground truth 
+def plot_comparison_pred_gt(model, dataset_name, label, plot_type):
+    plot_data_loader = DataLoader(
+            dataset=dataset_name,
+            batch_size=BATCH_SIZE,
+            shuffle=False
+    )
+    prediction = []
+    losses = []
+    sizes = []
+    for batch, (batch_x, batch_y) in enumerate(plot_data_loader):
+        pred = model(batch_x).cpu().detach()
+        prediction.append(pred)
+    
+    prediction = tuple(prediction)
+    prediction = torch.cat(prediction, dim=0).numpy()
+    label = (label.cpu()).numpy()
+    prediction = prediction.reshape(len(prediction))
+    label = label.reshape(len(label))
+
+    error_within_one_percent, error_within_two_percent = count_error(prediction, label)
+
+    plt.style.use('ggplot')
+    plt.figure()
+    plt.plot([0.0, 11.0], [0.0, 11.0], 'g')
+    plt.scatter(label, prediction, c='b', alpha=0.6)
+    plt.plot([0.0, 11.0], [1.0, 12.0], 'y--')
+    plt.plot([0.0, 11.0], [-1.0, 10.0], 'm--')
+    plt.plot([0.0, 11.0], [2.0, 13.0], 'c--')
+    plt.plot([0.0, 11.0], [-2.0, 9.0], 'r--')
+    plt.legend(['y=x', 'y=x+1', 'y=x-1', 'y=x+2', 'y=x-2'], loc='upper left')
+    plt.text(7,1.5, 'Error <= 1 rate: ' + str(error_within_one_percent)[:5] + '%', fontsize=10)
+    plt.text(7,0.5, 'Error <= 2 rate: ' + str(error_within_two_percent)[:5] + '%', fontsize=10)
 
 
+    plt.xlabel('ground truth')
+    plt.ylabel('prediction')
+    plt.title(plot_type + ' result comparison')
+    plt.savefig(HISTORY_DIR + PREFIX + '/' + plot_type + '_result_comparison.png')
 
-    val_plot_data_loader = DataLoader(
+def count_error(prediction, label):
+    error_within_one = 0
+    error_within_two = 0
+    errors = prediction - label
+    for error in errors:
+        if (abs(error) <= 1):
+            error_within_one = error_within_one + 1
+            error_within_two = error_within_two + 1
+        elif ((abs(error) > 1) and (abs(error) <= 2)):
+            error_within_two = error_within_two + 1
+    error_within_one_percent = (error_within_one * 100) / len(errors)
+    error_within_two_percent = (error_within_two * 100) / len(errors)
+
+    return error_within_one_percent, error_within_two_percent
+
+if __name__ == '__main__':
+    # basic model and optimizer setup
+    model = CompoundModel()
+    model.apply(set_bn_eval)
+    model = model.float()
+    optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
+
+    # get the training and validation data
+    my_data, my_label = data_preprocessing_face_two_eyes.get_all_data(TRAIN_VAL_DIR, TIME_STEP)
+    my_data = my_data[:, :, 0]
+    train_data, train_label, val_data, val_label = train_val_split(my_data, my_label)
+    del my_data
+    del my_label
+
+    # get the testing data
+    test_data, test_label = data_preprocessing_face_two_eyes.get_all_data(TEST_DIR, TIME_STEP)
+    test_label = test_label.reshape(-1, 1)
+    test_data = test_data[:, :, 0]
+
+    # transfer training and validation data to Variable
+    train_data, train_label = Variable(torch.from_numpy(train_data)).int(), Variable(torch.from_numpy(train_label)).float()
+    val_data, val_label = Variable(torch.from_numpy(val_data)).int(), Variable(torch.from_numpy(val_label)).float()
+    test_data, test_label = Variable(torch.from_numpy(test_data)).int(), Variable(torch.from_numpy(test_label)).float()
+
+    # deploy the data into cuda device
+    if torch.cuda.is_available():
+        model = model.cuda()
+        train_data = train_data.cuda()
+        train_label = train_label.cuda()
+        val_data = val_data.cuda()
+        val_label = val_label.cuda()
+        test_data = test_data.cuda()
+        test_label = test_label.cuda()
+    
+    # build training dataset loader
+    train_dataset = TensorDataset(train_data, train_label)
+    train_loader = DataLoader(
+            dataset=train_dataset,
+            batch_size=BATCH_SIZE,
+            shuffle=True
+    )
+
+    # build validation dataset loader
+    val_dataset = TensorDataset(val_data, val_label)
+    val_loader = DataLoader(
             dataset=val_dataset,
             batch_size=BATCH_SIZE,
-            shuffle=False
+            shuffle=True
     )
-    val_prediction = []
-    for batch, (val_x, val_y) in enumerate(val_plot_data_loader):
-        val_prediction.append(model(val_x).cpu().detach())
-    val_prediction = tuple(val_prediction)
-    val_prediction = torch.cat(val_prediction, dim=0).numpy()
-    val_label = (val_label.cpu()).numpy()
-    val_prediction = val_prediction.reshape(len(val_prediction))
-    val_label = val_label.reshape(len(val_label))
-    
-    plt.figure()
-    val_standard_plot = plt.plot([0.0, 11.0], [0.0, 11.0], c='r', label='y=x')
-    val_error_plot1 = plt.plot([0.0, 11.0], [1.0, 12.0], c='green', label='y=x+1', linestyle="-")
-    val_error_plot2 = plt.plot([0.0, 11.0], [-1.0, 10.0], c='green', label='y=x-1', linestyle="-")
-    val_comparison_plot = plt.scatter(val_prediction, val_label, c='blue', alpha=0.6, label='Prediction vs Ground Truth')
-    plt.xlabel('ground truth')
-    plt.ylabel('prediction')
-    plt.title('Validation label comparison')
-    plt.savefig(HISTORY_DIR + PREFIX + '/validation_label_comparison.png')
 
-    train_plot_data_loader = DataLoader(
-            dataset=my_dataset,
+    # build testing dataset and loader
+    test_dataset = TensorDataset(test_data, test_label)
+    test_loader = DataLoader(
+            dataset=test_dataset,
             batch_size=BATCH_SIZE,
-            shuffle=False
+            shuffle=True
     )
-    train_prediction = []
-    for batch, (train_x, train_y) in enumerate(train_plot_data_loader):
-        train_prediction.append(model(train_x).cpu().detach())
-    train_prediction = tuple(train_prediction)
-    train_prediction = torch.cat(train_prediction, dim=0).numpy()
-    train_label = (my_label.cpu()).numpy()
-    train_label = train_label.reshape(len(train_label))
-    train_prediction = train_prediction.reshape(len(train_prediction))
-    
-    plt.figure()
 
-    train_comparison_plot = plt.scatter(train_prediction, train_label, c='blue', alpha=0.6, label='Prediction vs Ground Truth')
-    train_standard_plot = plt.plot([0.0, 11.0], [0.0, 11.0], 'r', label='y=x')
-    train_error_plot1 = plt.plot([0.0, 11.0], [1.0, 12.0], c='green', label='y=x+1', linestyle="-")
-    train_error_plot2 = plt.plot([0.0, 11.0], [-1.0, 10.0], c='green', label='y=x-1', linestyle="-")
-    plt.xlabel('ground truth')
-    plt.ylabel('prediction')
-    plt.title('Training label comparison')
-    plt.savefig(HISTORY_DIR + PREFIX + '/training_label_comparison.png')
+    # training the model
+    training_loss_iteration, validation_loss_iteration, iteration = training(model, train_loader, val_loader, test_loader)
+
+
+    # plot the training history
+    plot_training_history(training_loss_iteration, validation_loss_iteration, iteration)
+
+    # plot the comparison for training data
+    plot_comparison_pred_gt(model, train_dataset, train_label, "training")
+
+    # plot the comparison for validation data
+    plot_comparison_pred_gt(model, val_dataset, val_label, "validation")
+
+    # plot the comparison for testing data 
+    plot_comparison_pred_gt(model, test_dataset, test_label, "testing")
 
 
 
