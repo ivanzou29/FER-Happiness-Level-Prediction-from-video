@@ -52,7 +52,7 @@ PREFIX = 'training_history_BatchSize=' + str(BATCH_SIZE) + '_Epoch=' + str(EPOCH
 
 TRAIN_VAL_DIR = "/data0/yunfan/train_frames"
 TEST_DIR = "/data0/yunfan/test_frames"
-HISTORY_DIR = "vgg_reduced_model_with_RNN_face_eye_mouth_history/"
+HISTORY_DIR = "vgg_reduced_model_with_RNN_face_eye_mouth_history_evenly_sampled/"
 
 class CNN(nn.Module):
     def __init__(self, net_arch):
@@ -288,6 +288,10 @@ def plot_comparison_pred_gt(model, dataset_name, label, plot_type):
     plt.text(7,1.5, 'Error <= 1 rate: ' + str(error_within_one_percent)[:5] + '%', fontsize=10)
     plt.text(7,0.5, 'Error <= 2 rate: ' + str(error_within_two_percent)[:5] + '%', fontsize=10)
 
+    f = open(HISTORY_DIR + PREFIX + '/' + plot_type + '_error_rate.txt', 'w+')
+    f.write('Error <= 1 rate: ' + str(error_within_one_percent)[:5])
+    f.write('Error <= 2 rate: ' + str(error_within_two_percent)[:5])
+    f.close()
 
     plt.xlabel('ground truth')
     plt.ylabel('prediction')

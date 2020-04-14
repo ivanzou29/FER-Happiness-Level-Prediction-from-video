@@ -1,0 +1,2201 @@
+Epoch: 1| Step: 0
+Training loss: 6.285389916608881
+Validation loss: 5.775440109693284
+
+Epoch: 5| Step: 1
+Training loss: 5.666034812855307
+Validation loss: 5.748972402794431
+
+Epoch: 5| Step: 2
+Training loss: 5.870044647514903
+Validation loss: 5.725851730151477
+
+Epoch: 5| Step: 3
+Training loss: 5.754492953158359
+Validation loss: 5.700986442850733
+
+Epoch: 5| Step: 4
+Training loss: 6.234768121318653
+Validation loss: 5.672409420700747
+
+Epoch: 5| Step: 5
+Training loss: 5.376376131126311
+Validation loss: 5.639952146032882
+
+Epoch: 5| Step: 6
+Training loss: 5.142269161460361
+Validation loss: 5.604022273246659
+
+Epoch: 5| Step: 7
+Training loss: 5.285504134430142
+Validation loss: 5.5624352663722565
+
+Epoch: 5| Step: 8
+Training loss: 5.28211435321172
+Validation loss: 5.51660401897637
+
+Epoch: 5| Step: 9
+Training loss: 5.374700493563136
+Validation loss: 5.465480461576497
+
+Epoch: 5| Step: 10
+Training loss: 5.9543638367126315
+Validation loss: 5.409584971906624
+
+Epoch: 2| Step: 0
+Training loss: 5.781521847493692
+Validation loss: 5.3489201238381225
+
+Epoch: 5| Step: 1
+Training loss: 4.892762713271899
+Validation loss: 5.2837176115286395
+
+Epoch: 5| Step: 2
+Training loss: 5.5560778287595465
+Validation loss: 5.212250904399072
+
+Epoch: 5| Step: 3
+Training loss: 5.6423798681746185
+Validation loss: 5.138601728355701
+
+Epoch: 5| Step: 4
+Training loss: 4.902047854304724
+Validation loss: 5.062078705797886
+
+Epoch: 5| Step: 5
+Training loss: 5.485049301384906
+Validation loss: 4.981617907745066
+
+Epoch: 5| Step: 6
+Training loss: 4.92788571470438
+Validation loss: 4.897355344409363
+
+Epoch: 5| Step: 7
+Training loss: 4.232379738844824
+Validation loss: 4.811372699238396
+
+Epoch: 5| Step: 8
+Training loss: 6.119346656581728
+Validation loss: 4.725628869841873
+
+Epoch: 5| Step: 9
+Training loss: 3.3658783175346234
+Validation loss: 4.648576587703251
+
+Epoch: 5| Step: 10
+Training loss: 4.0245369307181
+Validation loss: 4.583285813444172
+
+Epoch: 3| Step: 0
+Training loss: 3.647780430702714
+Validation loss: 4.523362670757837
+
+Epoch: 5| Step: 1
+Training loss: 4.992738982828882
+Validation loss: 4.470161321257579
+
+Epoch: 5| Step: 2
+Training loss: 5.33551819076776
+Validation loss: 4.419104357109727
+
+Epoch: 5| Step: 3
+Training loss: 4.329264246428632
+Validation loss: 4.36188388691628
+
+Epoch: 5| Step: 4
+Training loss: 4.343282550935495
+Validation loss: 4.309647201337338
+
+Epoch: 5| Step: 5
+Training loss: 4.045252412104431
+Validation loss: 4.2633169057612434
+
+Epoch: 5| Step: 6
+Training loss: 5.132792247807744
+Validation loss: 4.221752619539107
+
+Epoch: 5| Step: 7
+Training loss: 3.4368299351367035
+Validation loss: 4.183829890801956
+
+Epoch: 5| Step: 8
+Training loss: 4.442736477630422
+Validation loss: 4.154769823870713
+
+Epoch: 5| Step: 9
+Training loss: 4.158729903296118
+Validation loss: 4.122346849529919
+
+Epoch: 5| Step: 10
+Training loss: 4.213327271139234
+Validation loss: 4.086033508243213
+
+Epoch: 4| Step: 0
+Training loss: 3.4856032870886753
+Validation loss: 4.050587636067776
+
+Epoch: 5| Step: 1
+Training loss: 3.307585327247278
+Validation loss: 4.027390200692375
+
+Epoch: 5| Step: 2
+Training loss: 3.4460452591574624
+Validation loss: 4.010974347392535
+
+Epoch: 5| Step: 3
+Training loss: 3.7931822098952512
+Validation loss: 3.9972292702212635
+
+Epoch: 5| Step: 4
+Training loss: 5.331573354880955
+Validation loss: 3.979341222336885
+
+Epoch: 5| Step: 5
+Training loss: 4.7281630651299436
+Validation loss: 3.9575313491848787
+
+Epoch: 5| Step: 6
+Training loss: 3.850798556257393
+Validation loss: 3.940697846281711
+
+Epoch: 5| Step: 7
+Training loss: 4.212187459427628
+Validation loss: 3.9258043305137873
+
+Epoch: 5| Step: 8
+Training loss: 4.6538884875778415
+Validation loss: 3.9111373037961004
+
+Epoch: 5| Step: 9
+Training loss: 3.4272071019851515
+Validation loss: 3.896380243260011
+
+Epoch: 5| Step: 10
+Training loss: 4.569176165825803
+Validation loss: 3.884607380503238
+
+Epoch: 5| Step: 0
+Training loss: 3.9970129303922266
+Validation loss: 3.8618035618581112
+
+Epoch: 5| Step: 1
+Training loss: 3.7306760720367795
+Validation loss: 3.8239094355836847
+
+Epoch: 5| Step: 2
+Training loss: 3.913421883000935
+Validation loss: 3.787796724849384
+
+Epoch: 5| Step: 3
+Training loss: 4.296089239234312
+Validation loss: 3.7710324968331443
+
+Epoch: 5| Step: 4
+Training loss: 3.029712090237527
+Validation loss: 3.738785519815811
+
+Epoch: 5| Step: 5
+Training loss: 3.099602298452067
+Validation loss: 3.7213259473813567
+
+Epoch: 5| Step: 6
+Training loss: 3.7143990845198678
+Validation loss: 3.709062908025712
+
+Epoch: 5| Step: 7
+Training loss: 4.7802077011248745
+Validation loss: 3.69377213357581
+
+Epoch: 5| Step: 8
+Training loss: 3.749791711744764
+Validation loss: 3.6768968803242785
+
+Epoch: 5| Step: 9
+Training loss: 4.357397143517332
+Validation loss: 3.6617846686244264
+
+Epoch: 5| Step: 10
+Training loss: 4.148040695034948
+Validation loss: 3.6476430626816505
+
+Epoch: 6| Step: 0
+Training loss: 4.255263042993168
+Validation loss: 3.633341228227786
+
+Epoch: 5| Step: 1
+Training loss: 3.700394794949421
+Validation loss: 3.616612066162329
+
+Epoch: 5| Step: 2
+Training loss: 4.087522939448484
+Validation loss: 3.603966720149604
+
+Epoch: 5| Step: 3
+Training loss: 3.474282466440547
+Validation loss: 3.586941290384825
+
+Epoch: 5| Step: 4
+Training loss: 3.891090702235987
+Validation loss: 3.578343057120644
+
+Epoch: 5| Step: 5
+Training loss: 3.8201064227793267
+Validation loss: 3.564553581931554
+
+Epoch: 5| Step: 6
+Training loss: 4.220521456062507
+Validation loss: 3.5530442958313806
+
+Epoch: 5| Step: 7
+Training loss: 3.170905655693201
+Validation loss: 3.5382207162610753
+
+Epoch: 5| Step: 8
+Training loss: 3.376308328858393
+Validation loss: 3.5238709985838748
+
+Epoch: 5| Step: 9
+Training loss: 2.8160775213679328
+Validation loss: 3.5123738989938627
+
+Epoch: 5| Step: 10
+Training loss: 4.472412955650901
+Validation loss: 3.503003599800253
+
+Epoch: 7| Step: 0
+Training loss: 4.00868188898303
+Validation loss: 3.494577615511936
+
+Epoch: 5| Step: 1
+Training loss: 3.287800236325488
+Validation loss: 3.480717612039035
+
+Epoch: 5| Step: 2
+Training loss: 3.3256342347519956
+Validation loss: 3.469920702761658
+
+Epoch: 5| Step: 3
+Training loss: 4.370786981667184
+Validation loss: 3.463507863515953
+
+Epoch: 5| Step: 4
+Training loss: 3.048402843346776
+Validation loss: 3.4508998258568027
+
+Epoch: 5| Step: 5
+Training loss: 3.7031171452563716
+Validation loss: 3.4443348552785973
+
+Epoch: 5| Step: 6
+Training loss: 3.964155045249658
+Validation loss: 3.434407273530117
+
+Epoch: 5| Step: 7
+Training loss: 3.222174739122395
+Validation loss: 3.425372248654885
+
+Epoch: 5| Step: 8
+Training loss: 3.6045798944981526
+Validation loss: 3.42149358318625
+
+Epoch: 5| Step: 9
+Training loss: 4.085701054866987
+Validation loss: 3.4094139247512376
+
+Epoch: 5| Step: 10
+Training loss: 3.4131740924327176
+Validation loss: 3.399760101005467
+
+Epoch: 8| Step: 0
+Training loss: 3.6135616709174796
+Validation loss: 3.394450877823054
+
+Epoch: 5| Step: 1
+Training loss: 3.154337841984354
+Validation loss: 3.3881086600560666
+
+Epoch: 5| Step: 2
+Training loss: 3.114412147810277
+Validation loss: 3.379746759159019
+
+Epoch: 5| Step: 3
+Training loss: 3.314845424402638
+Validation loss: 3.369911871960006
+
+Epoch: 5| Step: 4
+Training loss: 3.5396354834606805
+Validation loss: 3.3627052583300503
+
+Epoch: 5| Step: 5
+Training loss: 2.7197544390963637
+Validation loss: 3.3530698274689485
+
+Epoch: 5| Step: 6
+Training loss: 4.341692320491003
+Validation loss: 3.3452229361242756
+
+Epoch: 5| Step: 7
+Training loss: 3.6752851518304843
+Validation loss: 3.3370243561470514
+
+Epoch: 5| Step: 8
+Training loss: 3.564594121783258
+Validation loss: 3.324358224934201
+
+Epoch: 5| Step: 9
+Training loss: 4.072813821390079
+Validation loss: 3.3142888197522375
+
+Epoch: 5| Step: 10
+Training loss: 4.0494216505997125
+Validation loss: 3.3073934942293453
+
+Epoch: 9| Step: 0
+Training loss: 3.8412708257823787
+Validation loss: 3.2945601686168127
+
+Epoch: 5| Step: 1
+Training loss: 3.6506004048704153
+Validation loss: 3.287039294901569
+
+Epoch: 5| Step: 2
+Training loss: 3.5414646913867935
+Validation loss: 3.2737042867076003
+
+Epoch: 5| Step: 3
+Training loss: 3.0810336394883278
+Validation loss: 3.2646599676447305
+
+Epoch: 5| Step: 4
+Training loss: 3.8033243044033638
+Validation loss: 3.287045183322036
+
+Epoch: 5| Step: 5
+Training loss: 3.2690337428104503
+Validation loss: 3.240529823477865
+
+Epoch: 5| Step: 6
+Training loss: 3.8940212638991496
+Validation loss: 3.244872065127985
+
+Epoch: 5| Step: 7
+Training loss: 3.7305825101273613
+Validation loss: 3.240760195104514
+
+Epoch: 5| Step: 8
+Training loss: 3.1492045109549247
+Validation loss: 3.2237161169672435
+
+Epoch: 5| Step: 9
+Training loss: 3.5256090598446796
+Validation loss: 3.2282968107046464
+
+Epoch: 5| Step: 10
+Training loss: 2.8276982275218434
+Validation loss: 3.2424441901530385
+
+Epoch: 10| Step: 0
+Training loss: 2.7730666221542104
+Validation loss: 3.2656769863912336
+
+Epoch: 5| Step: 1
+Training loss: 3.4072155065294254
+Validation loss: 3.2629012115786007
+
+Epoch: 5| Step: 2
+Training loss: 3.8123791784934444
+Validation loss: 3.2019457463382226
+
+Epoch: 5| Step: 3
+Training loss: 3.332155750806351
+Validation loss: 3.208799903311845
+
+Epoch: 5| Step: 4
+Training loss: 3.590910876441573
+Validation loss: 3.2383163570776725
+
+Epoch: 5| Step: 5
+Training loss: 3.8525639406278485
+Validation loss: 3.2562762382218144
+
+Epoch: 5| Step: 6
+Training loss: 3.490890364434126
+Validation loss: 3.206892763801705
+
+Epoch: 5| Step: 7
+Training loss: 3.882390757323857
+Validation loss: 3.1939325992321383
+
+Epoch: 5| Step: 8
+Training loss: 3.4912536874567945
+Validation loss: 3.1918293712403147
+
+Epoch: 5| Step: 9
+Training loss: 3.140841803967342
+Validation loss: 3.1930988658213963
+
+Epoch: 5| Step: 10
+Training loss: 3.2301228902014274
+Validation loss: 3.1967861952092345
+
+Epoch: 11| Step: 0
+Training loss: 3.5530057513004976
+Validation loss: 3.189477236908242
+
+Epoch: 5| Step: 1
+Training loss: 3.7382734691255886
+Validation loss: 3.18362479930508
+
+Epoch: 5| Step: 2
+Training loss: 2.860321888716001
+Validation loss: 3.1623169267161764
+
+Epoch: 5| Step: 3
+Training loss: 3.0087163186495993
+Validation loss: 3.157050524365149
+
+Epoch: 5| Step: 4
+Training loss: 3.6114663674780765
+Validation loss: 3.1598084431505984
+
+Epoch: 5| Step: 5
+Training loss: 3.266916995934423
+Validation loss: 3.1511945562137846
+
+Epoch: 5| Step: 6
+Training loss: 3.3976393189823035
+Validation loss: 3.1466017394939305
+
+Epoch: 5| Step: 7
+Training loss: 3.1701043359090435
+Validation loss: 3.1416291131788157
+
+Epoch: 5| Step: 8
+Training loss: 3.304707556408922
+Validation loss: 3.135618552812016
+
+Epoch: 5| Step: 9
+Training loss: 3.2520877294777466
+Validation loss: 3.1349247944639025
+
+Epoch: 5| Step: 10
+Training loss: 4.4245174856100125
+Validation loss: 3.133304318699739
+
+Epoch: 12| Step: 0
+Training loss: 3.603781457208636
+Validation loss: 3.1289334388878838
+
+Epoch: 5| Step: 1
+Training loss: 3.228682221200787
+Validation loss: 3.1197987971232153
+
+Epoch: 5| Step: 2
+Training loss: 3.001588718631423
+Validation loss: 3.1174524662235856
+
+Epoch: 5| Step: 3
+Training loss: 3.38950790074372
+Validation loss: 3.12093211891877
+
+Epoch: 5| Step: 4
+Training loss: 3.686514641959706
+Validation loss: 3.117107036575071
+
+Epoch: 5| Step: 5
+Training loss: 3.3770787936601163
+Validation loss: 3.1081998305559155
+
+Epoch: 5| Step: 6
+Training loss: 3.5759582622405053
+Validation loss: 3.103193702239188
+
+Epoch: 5| Step: 7
+Training loss: 3.1990594137194956
+Validation loss: 3.098801061924534
+
+Epoch: 5| Step: 8
+Training loss: 3.3849174874869146
+Validation loss: 3.0975988499875564
+
+Epoch: 5| Step: 9
+Training loss: 3.5091463199612325
+Validation loss: 3.096062897862292
+
+Epoch: 5| Step: 10
+Training loss: 3.2558182208613062
+Validation loss: 3.0936787467499967
+
+Epoch: 13| Step: 0
+Training loss: 3.0893254864224926
+Validation loss: 3.092810645530576
+
+Epoch: 5| Step: 1
+Training loss: 4.196637333370244
+Validation loss: 3.0890231158882697
+
+Epoch: 5| Step: 2
+Training loss: 3.168783099661862
+Validation loss: 3.0922563157453284
+
+Epoch: 5| Step: 3
+Training loss: 3.531008281705614
+Validation loss: 3.08866800693353
+
+Epoch: 5| Step: 4
+Training loss: 3.3228274884509683
+Validation loss: 3.0883253444722394
+
+Epoch: 5| Step: 5
+Training loss: 3.549961713127742
+Validation loss: 3.088577932397241
+
+Epoch: 5| Step: 6
+Training loss: 3.071467912618432
+Validation loss: 3.0921139850035724
+
+Epoch: 5| Step: 7
+Training loss: 2.9310501388379278
+Validation loss: 3.1120980246451233
+
+Epoch: 5| Step: 8
+Training loss: 3.005518605805619
+Validation loss: 3.0770549231123105
+
+Epoch: 5| Step: 9
+Training loss: 3.242365453041822
+Validation loss: 3.074416888761152
+
+Epoch: 5| Step: 10
+Training loss: 3.7917081110998345
+Validation loss: 3.074660682114899
+
+Epoch: 14| Step: 0
+Training loss: 2.6175229896621564
+Validation loss: 3.0743621051813106
+
+Epoch: 5| Step: 1
+Training loss: 3.275789203629594
+Validation loss: 3.0736278119153626
+
+Epoch: 5| Step: 2
+Training loss: 3.5468118132621993
+Validation loss: 3.072087878627418
+
+Epoch: 5| Step: 3
+Training loss: 3.2060215204936107
+Validation loss: 3.068626999291065
+
+Epoch: 5| Step: 4
+Training loss: 3.8553777218230754
+Validation loss: 3.065668228967044
+
+Epoch: 5| Step: 5
+Training loss: 3.460425758847474
+Validation loss: 3.065081715487419
+
+Epoch: 5| Step: 6
+Training loss: 3.131168533453237
+Validation loss: 3.0668470667918326
+
+Epoch: 5| Step: 7
+Training loss: 3.908410901328135
+Validation loss: 3.0636739324575832
+
+Epoch: 5| Step: 8
+Training loss: 3.1391279153952723
+Validation loss: 3.0603219985658274
+
+Epoch: 5| Step: 9
+Training loss: 3.462020807813042
+Validation loss: 3.0594938624293304
+
+Epoch: 5| Step: 10
+Training loss: 3.0297465577844522
+Validation loss: 3.0580014574306085
+
+Epoch: 15| Step: 0
+Training loss: 3.6715074720487184
+Validation loss: 3.056420347853801
+
+Epoch: 5| Step: 1
+Training loss: 2.405247070564474
+Validation loss: 3.0533487183884995
+
+Epoch: 5| Step: 2
+Training loss: 3.451703223368416
+Validation loss: 3.053830344630492
+
+Epoch: 5| Step: 3
+Training loss: 3.207779791173276
+Validation loss: 3.0531012046535673
+
+Epoch: 5| Step: 4
+Training loss: 3.2881443799101593
+Validation loss: 3.0515409902814454
+
+Epoch: 5| Step: 5
+Training loss: 3.372082614959096
+Validation loss: 3.0498726586720157
+
+Epoch: 5| Step: 6
+Training loss: 3.128169016952346
+Validation loss: 3.0472792036268848
+
+Epoch: 5| Step: 7
+Training loss: 3.7059063345224885
+Validation loss: 3.048057906674147
+
+Epoch: 5| Step: 8
+Training loss: 3.3443725576803534
+Validation loss: 3.0477593614366034
+
+Epoch: 5| Step: 9
+Training loss: 3.3520567202810643
+Validation loss: 3.0470822095813723
+
+Epoch: 5| Step: 10
+Training loss: 3.6632167596524017
+Validation loss: 3.0516851301828662
+
+Epoch: 16| Step: 0
+Training loss: 3.361398202984633
+Validation loss: 3.0491701411595677
+
+Epoch: 5| Step: 1
+Training loss: 3.6576815679908257
+Validation loss: 3.045205161062996
+
+Epoch: 5| Step: 2
+Training loss: 2.8343131297297406
+Validation loss: 3.0443301730048735
+
+Epoch: 5| Step: 3
+Training loss: 3.1149842547513193
+Validation loss: 3.0424823052295222
+
+Epoch: 5| Step: 4
+Training loss: 3.8633707342786763
+Validation loss: 3.0408364777185986
+
+Epoch: 5| Step: 5
+Training loss: 2.83419687537859
+Validation loss: 3.040020751202261
+
+Epoch: 5| Step: 6
+Training loss: 3.49894398698348
+Validation loss: 3.0392050790454728
+
+Epoch: 5| Step: 7
+Training loss: 3.018189757745083
+Validation loss: 3.0396236217258106
+
+Epoch: 5| Step: 8
+Training loss: 2.9641722068130703
+Validation loss: 3.0352076548816584
+
+Epoch: 5| Step: 9
+Training loss: 3.318702792246784
+Validation loss: 3.0345423766773694
+
+Epoch: 5| Step: 10
+Training loss: 3.9916447160365487
+Validation loss: 3.034449433279288
+
+Epoch: 17| Step: 0
+Training loss: 3.4639058698414527
+Validation loss: 3.0334348442764347
+
+Epoch: 5| Step: 1
+Training loss: 3.530960476239521
+Validation loss: 3.0318016444233
+
+Epoch: 5| Step: 2
+Training loss: 2.755506810616826
+Validation loss: 3.0287426684320904
+
+Epoch: 5| Step: 3
+Training loss: 3.126008443243787
+Validation loss: 3.0309235896374767
+
+Epoch: 5| Step: 4
+Training loss: 2.0849887247489667
+Validation loss: 3.0518694687235173
+
+Epoch: 5| Step: 5
+Training loss: 3.6069281404897353
+Validation loss: 3.115234216996153
+
+Epoch: 5| Step: 6
+Training loss: 3.961878076116761
+Validation loss: 3.114745482623667
+
+Epoch: 5| Step: 7
+Training loss: 3.0089694089491337
+Validation loss: 3.112541167686291
+
+Epoch: 5| Step: 8
+Training loss: 3.509310464104263
+Validation loss: 3.1166408562316703
+
+Epoch: 5| Step: 9
+Training loss: 3.3998613553669763
+Validation loss: 3.1208148849018476
+
+Epoch: 5| Step: 10
+Training loss: 4.217477790308227
+Validation loss: 3.1172572174981257
+
+Epoch: 18| Step: 0
+Training loss: 2.830988156503086
+Validation loss: 3.1093937009678894
+
+Epoch: 5| Step: 1
+Training loss: 3.6504896384210883
+Validation loss: 3.1056976017335174
+
+Epoch: 5| Step: 2
+Training loss: 3.731780232082474
+Validation loss: 3.1051631043136405
+
+Epoch: 5| Step: 3
+Training loss: 3.6077956670514633
+Validation loss: 3.1003464649738115
+
+Epoch: 5| Step: 4
+Training loss: 3.738017584133273
+Validation loss: 3.1002435875961165
+
+Epoch: 5| Step: 5
+Training loss: 3.02169994332418
+Validation loss: 3.099495527957745
+
+Epoch: 5| Step: 6
+Training loss: 3.8341387165269336
+Validation loss: 3.0965268345412467
+
+Epoch: 5| Step: 7
+Training loss: 2.706105083435456
+Validation loss: 3.087004750300046
+
+Epoch: 5| Step: 8
+Training loss: 3.1345444455655094
+Validation loss: 3.082449406904586
+
+Epoch: 5| Step: 9
+Training loss: 3.8537580256296553
+Validation loss: 3.077560703724546
+
+Epoch: 5| Step: 10
+Training loss: 2.47322025465577
+Validation loss: 3.0704142912062014
+
+Epoch: 19| Step: 0
+Training loss: 3.3412885786541584
+Validation loss: 3.067331687741817
+
+Epoch: 5| Step: 1
+Training loss: 3.8190927254926197
+Validation loss: 3.0650953872848645
+
+Epoch: 5| Step: 2
+Training loss: 2.931406722118819
+Validation loss: 3.0577742642626466
+
+Epoch: 5| Step: 3
+Training loss: 3.5484129138466
+Validation loss: 3.0525187005076435
+
+Epoch: 5| Step: 4
+Training loss: 3.190051086399384
+Validation loss: 3.0542968755371875
+
+Epoch: 5| Step: 5
+Training loss: 3.44341642837731
+Validation loss: 3.047025217329401
+
+Epoch: 5| Step: 6
+Training loss: 2.7155778290368775
+Validation loss: 3.045742926623537
+
+Epoch: 5| Step: 7
+Training loss: 3.5657416870388303
+Validation loss: 3.045540173159507
+
+Epoch: 5| Step: 8
+Training loss: 3.3421495832278247
+Validation loss: 3.0496492429948234
+
+Epoch: 5| Step: 9
+Training loss: 3.159440194050635
+Validation loss: 3.0760127723698893
+
+Epoch: 5| Step: 10
+Training loss: 3.587169693152347
+Validation loss: 3.112633604412666
+
+Epoch: 20| Step: 0
+Training loss: 3.3348958803592224
+Validation loss: 3.0109685360829794
+
+Epoch: 5| Step: 1
+Training loss: 3.4688680817721784
+Validation loss: 3.011157184081804
+
+Epoch: 5| Step: 2
+Training loss: 2.633971188549133
+Validation loss: 3.027404119794031
+
+Epoch: 5| Step: 3
+Training loss: 3.196319346833692
+Validation loss: 3.051215044139061
+
+Epoch: 5| Step: 4
+Training loss: 3.7290692165719936
+Validation loss: 3.0400756695855207
+
+Epoch: 5| Step: 5
+Training loss: 2.661875075666969
+Validation loss: 3.011702583552311
+
+Epoch: 5| Step: 6
+Training loss: 3.4125944075607837
+Validation loss: 3.0176780768290397
+
+Epoch: 5| Step: 7
+Training loss: 3.851264740922817
+Validation loss: 3.028759156138536
+
+Epoch: 5| Step: 8
+Training loss: 3.3560459408803993
+Validation loss: 3.0212226987321356
+
+Epoch: 5| Step: 9
+Training loss: 3.536045565367681
+Validation loss: 3.0223439350171346
+
+Epoch: 5| Step: 10
+Training loss: 3.047995024008707
+Validation loss: 3.008418772589764
+
+Epoch: 21| Step: 0
+Training loss: 3.61476716701822
+Validation loss: 3.002395561304692
+
+Epoch: 5| Step: 1
+Training loss: 3.532049848055714
+Validation loss: 2.999312919466196
+
+Epoch: 5| Step: 2
+Training loss: 3.5729934343074303
+Validation loss: 3.001030799535755
+
+Epoch: 5| Step: 3
+Training loss: 3.9858552464425077
+Validation loss: 2.9905268380217085
+
+Epoch: 5| Step: 4
+Training loss: 3.3324452329744183
+Validation loss: 2.990823277140041
+
+Epoch: 5| Step: 5
+Training loss: 3.0131068018213574
+Validation loss: 2.989284196136812
+
+Epoch: 5| Step: 6
+Training loss: 3.327609456567067
+Validation loss: 2.9890956720317394
+
+Epoch: 5| Step: 7
+Training loss: 2.9613719611375933
+Validation loss: 2.987635435639501
+
+Epoch: 5| Step: 8
+Training loss: 3.110881038136151
+Validation loss: 2.986308890302853
+
+Epoch: 5| Step: 9
+Training loss: 2.9179893401005477
+Validation loss: 2.9860055862049326
+
+Epoch: 5| Step: 10
+Training loss: 2.382909754034765
+Validation loss: 2.9840162014613654
+
+Epoch: 22| Step: 0
+Training loss: 2.7532262950192985
+Validation loss: 2.983323594782816
+
+Epoch: 5| Step: 1
+Training loss: 3.436041643993893
+Validation loss: 2.9886877527809577
+
+Epoch: 5| Step: 2
+Training loss: 3.7019682417485753
+Validation loss: 3.0015654735035113
+
+Epoch: 5| Step: 3
+Training loss: 3.375247098566177
+Validation loss: 2.984288689481394
+
+Epoch: 5| Step: 4
+Training loss: 3.0857533073985506
+Validation loss: 2.979352142551872
+
+Epoch: 5| Step: 5
+Training loss: 3.315126924918609
+Validation loss: 2.9898254775538007
+
+Epoch: 5| Step: 6
+Training loss: 4.351795895684929
+Validation loss: 3.006076884219062
+
+Epoch: 5| Step: 7
+Training loss: 2.9104449442584497
+Validation loss: 2.985122603345961
+
+Epoch: 5| Step: 8
+Training loss: 3.1129055203303904
+Validation loss: 2.9809020484157065
+
+Epoch: 5| Step: 9
+Training loss: 3.090190188039305
+Validation loss: 2.988505408635412
+
+Epoch: 5| Step: 10
+Training loss: 2.539155083949036
+Validation loss: 2.990801122671142
+
+Epoch: 23| Step: 0
+Training loss: 3.299852229191039
+Validation loss: 2.9977978807285295
+
+Epoch: 5| Step: 1
+Training loss: 3.6562166130954274
+Validation loss: 2.9939938842732676
+
+Epoch: 5| Step: 2
+Training loss: 3.4268318400916775
+Validation loss: 2.9718336789885567
+
+Epoch: 5| Step: 3
+Training loss: 3.5509403810000113
+Validation loss: 2.968902901736615
+
+Epoch: 5| Step: 4
+Training loss: 3.0842809166129808
+Validation loss: 2.966619196442056
+
+Epoch: 5| Step: 5
+Training loss: 3.0826447895136133
+Validation loss: 2.968986350702321
+
+Epoch: 5| Step: 6
+Training loss: 3.5950896046895786
+Validation loss: 2.9714114958946816
+
+Epoch: 5| Step: 7
+Training loss: 2.961478875825051
+Validation loss: 2.9723054606312163
+
+Epoch: 5| Step: 8
+Training loss: 3.002824407453268
+Validation loss: 2.9905690008976804
+
+Epoch: 5| Step: 9
+Training loss: 2.83187061775052
+Validation loss: 2.9867801982816524
+
+Epoch: 5| Step: 10
+Training loss: 3.447515151202883
+Validation loss: 2.963420141733681
+
+Epoch: 24| Step: 0
+Training loss: 3.036257039765151
+Validation loss: 2.959327228071032
+
+Epoch: 5| Step: 1
+Training loss: 3.0015153236792327
+Validation loss: 2.961990058104971
+
+Epoch: 5| Step: 2
+Training loss: 3.707471397325582
+Validation loss: 2.9635546220616305
+
+Epoch: 5| Step: 3
+Training loss: 3.339252049194082
+Validation loss: 2.9703902561549302
+
+Epoch: 5| Step: 4
+Training loss: 3.5225142730575336
+Validation loss: 2.961639906277677
+
+Epoch: 5| Step: 5
+Training loss: 3.0468103646489593
+Validation loss: 2.9598960099997904
+
+Epoch: 5| Step: 6
+Training loss: 3.2845422123266528
+Validation loss: 2.9571918811241957
+
+Epoch: 5| Step: 7
+Training loss: 2.9656976367347667
+Validation loss: 2.960047042797678
+
+Epoch: 5| Step: 8
+Training loss: 3.11997398561245
+Validation loss: 2.9592273100313435
+
+Epoch: 5| Step: 9
+Training loss: 3.1977092828926694
+Validation loss: 2.9557836835021285
+
+Epoch: 5| Step: 10
+Training loss: 3.541596101544072
+Validation loss: 2.951662378413715
+
+Epoch: 25| Step: 0
+Training loss: 2.475736943742573
+Validation loss: 2.949096798862671
+
+Epoch: 5| Step: 1
+Training loss: 3.1813766903935154
+Validation loss: 2.9427575237501684
+
+Epoch: 5| Step: 2
+Training loss: 3.143821494046025
+Validation loss: 2.9416573106329427
+
+Epoch: 5| Step: 3
+Training loss: 3.531345332386424
+Validation loss: 2.940987336787081
+
+Epoch: 5| Step: 4
+Training loss: 3.4436770339685205
+Validation loss: 2.9401855759757165
+
+Epoch: 5| Step: 5
+Training loss: 2.929730142918823
+Validation loss: 2.9393060133573097
+
+Epoch: 5| Step: 6
+Training loss: 3.4670687888522345
+Validation loss: 2.937386316156191
+
+Epoch: 5| Step: 7
+Training loss: 3.681529497245257
+Validation loss: 2.9340857931583457
+
+Epoch: 5| Step: 8
+Training loss: 3.0184436334614215
+Validation loss: 2.931124197947978
+
+Epoch: 5| Step: 9
+Training loss: 3.1262531056897744
+Validation loss: 2.9316932135868967
+
+Epoch: 5| Step: 10
+Training loss: 3.5286861328226133
+Validation loss: 2.9312762907788006
+
+Epoch: 26| Step: 0
+Training loss: 2.9185043721717707
+Validation loss: 2.929400961149907
+
+Epoch: 5| Step: 1
+Training loss: 3.6307594322497607
+Validation loss: 2.9254898856542417
+
+Epoch: 5| Step: 2
+Training loss: 3.3250405789530704
+Validation loss: 2.9258190500722345
+
+Epoch: 5| Step: 3
+Training loss: 3.2471736943128864
+Validation loss: 2.9237713019234195
+
+Epoch: 5| Step: 4
+Training loss: 3.549016096210282
+Validation loss: 2.92447922218558
+
+Epoch: 5| Step: 5
+Training loss: 3.0508226692230753
+Validation loss: 2.9212777079637204
+
+Epoch: 5| Step: 6
+Training loss: 3.2963558710344696
+Validation loss: 2.9213104834554433
+
+Epoch: 5| Step: 7
+Training loss: 2.943531904625354
+Validation loss: 2.916859732594326
+
+Epoch: 5| Step: 8
+Training loss: 3.2265357508254855
+Validation loss: 2.9179473989068265
+
+Epoch: 5| Step: 9
+Training loss: 2.903044378600426
+Validation loss: 2.9235903140373387
+
+Epoch: 5| Step: 10
+Training loss: 3.3329325593980452
+Validation loss: 2.9291261966845483
+
+Epoch: 27| Step: 0
+Training loss: 2.938048778162774
+Validation loss: 2.9209797173985796
+
+Epoch: 5| Step: 1
+Training loss: 3.5400682919051913
+Validation loss: 2.917208393316789
+
+Epoch: 5| Step: 2
+Training loss: 2.8755248876007706
+Validation loss: 2.912334484580188
+
+Epoch: 5| Step: 3
+Training loss: 2.826398375107584
+Validation loss: 2.911389434478815
+
+Epoch: 5| Step: 4
+Training loss: 3.2569524787057245
+Validation loss: 2.908794221383306
+
+Epoch: 5| Step: 5
+Training loss: 3.6825397557160464
+Validation loss: 2.9106900386507326
+
+Epoch: 5| Step: 6
+Training loss: 3.037672180821559
+Validation loss: 2.909378142198934
+
+Epoch: 5| Step: 7
+Training loss: 3.5436073072658476
+Validation loss: 2.913783017052727
+
+Epoch: 5| Step: 8
+Training loss: 2.993914153311257
+Validation loss: 2.905966017220525
+
+Epoch: 5| Step: 9
+Training loss: 2.7955887889840856
+Validation loss: 2.9080246768590534
+
+Epoch: 5| Step: 10
+Training loss: 3.7447635966147783
+Validation loss: 2.9134101343097476
+
+Epoch: 28| Step: 0
+Training loss: 3.7225663293343674
+Validation loss: 2.934423987840153
+
+Epoch: 5| Step: 1
+Training loss: 3.0878450702779037
+Validation loss: 2.929998777636291
+
+Epoch: 5| Step: 2
+Training loss: 3.0161477065812012
+Validation loss: 2.9166504491774132
+
+Epoch: 5| Step: 3
+Training loss: 3.0885295556759984
+Validation loss: 2.9113057021113558
+
+Epoch: 5| Step: 4
+Training loss: 3.5295377648058843
+Validation loss: 2.907431732818946
+
+Epoch: 5| Step: 5
+Training loss: 3.0160632827959826
+Validation loss: 2.908157063426732
+
+Epoch: 5| Step: 6
+Training loss: 3.447531195507031
+Validation loss: 2.9050093238865484
+
+Epoch: 5| Step: 7
+Training loss: 3.228047248664712
+Validation loss: 2.90586821939248
+
+Epoch: 5| Step: 8
+Training loss: 2.8744423366886735
+Validation loss: 2.905744242427729
+
+Epoch: 5| Step: 9
+Training loss: 3.2562682519207162
+Validation loss: 2.906955286303569
+
+Epoch: 5| Step: 10
+Training loss: 2.916961618677707
+Validation loss: 2.906400477509351
+
+Epoch: 29| Step: 0
+Training loss: 3.181392128398162
+Validation loss: 2.90752690165577
+
+Epoch: 5| Step: 1
+Training loss: 3.410974148856165
+Validation loss: 2.902996822211924
+
+Epoch: 5| Step: 2
+Training loss: 2.385437966686142
+Validation loss: 2.8998285459302116
+
+Epoch: 5| Step: 3
+Training loss: 2.880410948945002
+Validation loss: 2.896065530404054
+
+Epoch: 5| Step: 4
+Training loss: 2.9744487476123793
+Validation loss: 2.895473824121901
+
+Epoch: 5| Step: 5
+Training loss: 3.7270980865942778
+Validation loss: 2.8960421411589943
+
+Epoch: 5| Step: 6
+Training loss: 3.008015732277656
+Validation loss: 2.894054261778206
+
+Epoch: 5| Step: 7
+Training loss: 3.4318426568836813
+Validation loss: 2.8934040779662644
+
+Epoch: 5| Step: 8
+Training loss: 3.1892698273837463
+Validation loss: 2.894605827192833
+
+Epoch: 5| Step: 9
+Training loss: 3.970042221075436
+Validation loss: 2.890553042007546
+
+Epoch: 5| Step: 10
+Training loss: 2.5998300276730646
+Validation loss: 2.8896317815195087
+
+Epoch: 30| Step: 0
+Training loss: 3.144086003027524
+Validation loss: 2.892193103685866
+
+Epoch: 5| Step: 1
+Training loss: 3.1484624894809303
+Validation loss: 2.8919121215508334
+
+Epoch: 5| Step: 2
+Training loss: 2.6134440053484593
+Validation loss: 2.891706480432033
+
+Epoch: 5| Step: 3
+Training loss: 4.087494475101389
+Validation loss: 2.8977888092467117
+
+Epoch: 5| Step: 4
+Training loss: 3.395565248606474
+Validation loss: 2.9069550261433847
+
+Epoch: 5| Step: 5
+Training loss: 2.894617900503794
+Validation loss: 2.8860541942826115
+
+Epoch: 5| Step: 6
+Training loss: 2.8753960378124575
+Validation loss: 2.8853246036595976
+
+Epoch: 5| Step: 7
+Training loss: 3.340663305193229
+Validation loss: 2.8952497766474057
+
+Epoch: 5| Step: 8
+Training loss: 3.3058629752284543
+Validation loss: 2.8999110387495826
+
+Epoch: 5| Step: 9
+Training loss: 2.924173685063437
+Validation loss: 2.8999178325977186
+
+Epoch: 5| Step: 10
+Training loss: 3.352390996083989
+Validation loss: 2.893925903023039
+
+Epoch: 31| Step: 0
+Training loss: 2.8094004187531945
+Validation loss: 2.886807357829347
+
+Epoch: 5| Step: 1
+Training loss: 2.8769980412205727
+Validation loss: 2.8857394637203315
+
+Epoch: 5| Step: 2
+Training loss: 3.6130363092654236
+Validation loss: 2.8837582101657064
+
+Epoch: 5| Step: 3
+Training loss: 3.7467739215671845
+Validation loss: 2.8822098729153645
+
+Epoch: 5| Step: 4
+Training loss: 3.138444741557988
+Validation loss: 2.886193149909043
+
+Epoch: 5| Step: 5
+Training loss: 3.184620622590179
+Validation loss: 2.8821270193270405
+
+Epoch: 5| Step: 6
+Training loss: 3.403347913939365
+Validation loss: 2.8824162662638537
+
+Epoch: 5| Step: 7
+Training loss: 2.9098049284582097
+Validation loss: 2.881747214173412
+
+Epoch: 5| Step: 8
+Training loss: 3.185978545055001
+Validation loss: 2.883251344533555
+
+Epoch: 5| Step: 9
+Training loss: 3.1339864077294606
+Validation loss: 2.8894859280217617
+
+Epoch: 5| Step: 10
+Training loss: 2.9441072542825673
+Validation loss: 2.8904016658464875
+
+Epoch: 32| Step: 0
+Training loss: 2.7660109256079006
+Validation loss: 2.8862050683279556
+
+Epoch: 5| Step: 1
+Training loss: 3.7368153535070547
+Validation loss: 2.8890134869592012
+
+Epoch: 5| Step: 2
+Training loss: 2.9580782569917425
+Validation loss: 2.880679555167955
+
+Epoch: 5| Step: 3
+Training loss: 3.5065437180271326
+Validation loss: 2.87781153558911
+
+Epoch: 5| Step: 4
+Training loss: 3.4275305706416543
+Validation loss: 2.870059880733921
+
+Epoch: 5| Step: 5
+Training loss: 3.120100376519657
+Validation loss: 2.867313367605622
+
+Epoch: 5| Step: 6
+Training loss: 3.4950155460301158
+Validation loss: 2.865962186893785
+
+Epoch: 5| Step: 7
+Training loss: 2.7400274654042125
+Validation loss: 2.8645561486946485
+
+Epoch: 5| Step: 8
+Training loss: 3.1213824886974475
+Validation loss: 2.862384989107627
+
+Epoch: 5| Step: 9
+Training loss: 3.3480701524501453
+Validation loss: 2.8652018778483788
+
+Epoch: 5| Step: 10
+Training loss: 2.4653924249726553
+Validation loss: 2.863061579834367
+
+Epoch: 33| Step: 0
+Training loss: 2.6622350247481625
+Validation loss: 2.863588156162149
+
+Epoch: 5| Step: 1
+Training loss: 2.482576114836077
+Validation loss: 2.8630432630782896
+
+Epoch: 5| Step: 2
+Training loss: 2.653515653752024
+Validation loss: 2.8625457834882257
+
+Epoch: 5| Step: 3
+Training loss: 3.596348362208311
+Validation loss: 2.8617180227932515
+
+Epoch: 5| Step: 4
+Training loss: 3.375589954947922
+Validation loss: 2.859431468348436
+
+Epoch: 5| Step: 5
+Training loss: 2.9539157676593892
+Validation loss: 2.8583137115701445
+
+Epoch: 5| Step: 6
+Training loss: 3.2059807677379273
+Validation loss: 2.8568765326790357
+
+Epoch: 5| Step: 7
+Training loss: 3.3546788237290284
+Validation loss: 2.856125214335901
+
+Epoch: 5| Step: 8
+Training loss: 3.516957212863042
+Validation loss: 2.8587327891911776
+
+Epoch: 5| Step: 9
+Training loss: 3.7751332139516687
+Validation loss: 2.8541265328710383
+
+Epoch: 5| Step: 10
+Training loss: 2.9837917536869285
+Validation loss: 2.855408099355954
+
+Epoch: 34| Step: 0
+Training loss: 3.4772626193302547
+Validation loss: 2.8533729819156672
+
+Epoch: 5| Step: 1
+Training loss: 2.7562990871911084
+Validation loss: 2.864715661416564
+
+Epoch: 5| Step: 2
+Training loss: 3.091501671294739
+Validation loss: 2.8841279515111906
+
+Epoch: 5| Step: 3
+Training loss: 3.5247183288151342
+Validation loss: 2.8670381226183785
+
+Epoch: 5| Step: 4
+Training loss: 3.3932639544975833
+Validation loss: 2.8591496211612415
+
+Epoch: 5| Step: 5
+Training loss: 2.5630989305183896
+Validation loss: 2.849485049260966
+
+Epoch: 5| Step: 6
+Training loss: 3.2146102801957253
+Validation loss: 2.848151378821279
+
+Epoch: 5| Step: 7
+Training loss: 3.1146884930229115
+Validation loss: 2.849737746242902
+
+Epoch: 5| Step: 8
+Training loss: 3.165111226663044
+Validation loss: 2.849454408504113
+
+Epoch: 5| Step: 9
+Training loss: 3.1261814173055043
+Validation loss: 2.850944221189046
+
+Epoch: 5| Step: 10
+Training loss: 3.2717500766635506
+Validation loss: 2.850378240382345
+
+Epoch: 35| Step: 0
+Training loss: 3.125761778488856
+Validation loss: 2.8534936173464844
+
+Epoch: 5| Step: 1
+Training loss: 2.7577820687060393
+Validation loss: 2.8527797212087616
+
+Epoch: 5| Step: 2
+Training loss: 3.989491726427001
+Validation loss: 2.8522677325052976
+
+Epoch: 5| Step: 3
+Training loss: 3.2121530724009197
+Validation loss: 2.850224058637341
+
+Epoch: 5| Step: 4
+Training loss: 2.713327195569094
+Validation loss: 2.8487778491153746
+
+Epoch: 5| Step: 5
+Training loss: 3.196075572183854
+Validation loss: 2.8498787541659105
+
+Epoch: 5| Step: 6
+Training loss: 3.368057881952031
+Validation loss: 2.8524707228331954
+
+Epoch: 5| Step: 7
+Training loss: 2.6154785042304036
+Validation loss: 2.851818740846179
+
+Epoch: 5| Step: 8
+Training loss: 3.6673630284356125
+Validation loss: 2.847614891600069
+
+Epoch: 5| Step: 9
+Training loss: 2.877937143430705
+Validation loss: 2.843594214729276
+
+Epoch: 5| Step: 10
+Training loss: 3.056529550697508
+Validation loss: 2.8422287986872328
+
+Epoch: 36| Step: 0
+Training loss: 2.916894268056439
+Validation loss: 2.8412942651417468
+
+Epoch: 5| Step: 1
+Training loss: 3.627232620406905
+Validation loss: 2.839183580728075
+
+Epoch: 5| Step: 2
+Training loss: 3.117912800859679
+Validation loss: 2.839200534465475
+
+Epoch: 5| Step: 3
+Training loss: 3.436332088085273
+Validation loss: 2.840048443438715
+
+Epoch: 5| Step: 4
+Training loss: 3.1985973085286097
+Validation loss: 2.8401869943478717
+
+Epoch: 5| Step: 5
+Training loss: 3.2244483357633946
+Validation loss: 2.838489186905431
+
+Epoch: 5| Step: 6
+Training loss: 3.5292044597405154
+Validation loss: 2.8384751570150817
+
+Epoch: 5| Step: 7
+Training loss: 2.8922803932905756
+Validation loss: 2.8373267829906763
+
+Epoch: 5| Step: 8
+Training loss: 3.0975575762085916
+Validation loss: 2.8360095989974825
+
+Epoch: 5| Step: 9
+Training loss: 2.9973293178855
+Validation loss: 2.8370829700893254
+
+Epoch: 5| Step: 10
+Training loss: 2.2582969277838743
+Validation loss: 2.8416653808103916
+
+Epoch: 37| Step: 0
+Training loss: 2.6376873582580918
+Validation loss: 2.856857560675988
+
+Epoch: 5| Step: 1
+Training loss: 2.3317954808451247
+Validation loss: 2.868618234236556
+
+Epoch: 5| Step: 2
+Training loss: 3.5284901864984435
+Validation loss: 2.896694150721818
+
+Epoch: 5| Step: 3
+Training loss: 2.8620236329409816
+Validation loss: 2.9132073624105006
+
+Epoch: 5| Step: 4
+Training loss: 3.272751474531834
+Validation loss: 2.878864325369784
+
+Epoch: 5| Step: 5
+Training loss: 3.64951297175805
+Validation loss: 2.8329085593213614
+
+Epoch: 5| Step: 6
+Training loss: 3.507499969765193
+Validation loss: 2.8290437465935887
+
+Epoch: 5| Step: 7
+Training loss: 2.8928204421418267
+Validation loss: 2.8418029588880116
+
+Epoch: 5| Step: 8
+Training loss: 3.3307471892480947
+Validation loss: 2.8595494069704777
+
+Epoch: 5| Step: 9
+Training loss: 3.9860321787345403
+Validation loss: 2.8862530772603217
+
+Epoch: 5| Step: 10
+Training loss: 2.132059488357619
+Validation loss: 2.860041766935569
+
+Epoch: 38| Step: 0
+Training loss: 3.2036212815805647
+Validation loss: 2.8490874423616037
+
+Epoch: 5| Step: 1
+Training loss: 3.3807125489402394
+Validation loss: 2.833451873596591
+
+Epoch: 5| Step: 2
+Training loss: 2.9036844065660046
+Validation loss: 2.8320502833093495
+
+Epoch: 5| Step: 3
+Training loss: 2.6107114007966317
+Validation loss: 2.830907070245941
+
+Epoch: 5| Step: 4
+Training loss: 3.2653104639754336
+Validation loss: 2.8281806546458794
+
+Epoch: 5| Step: 5
+Training loss: 3.44841669765156
+Validation loss: 2.825539650402391
+
+Epoch: 5| Step: 6
+Training loss: 2.994009235283745
+Validation loss: 2.824416634622507
+
+Epoch: 5| Step: 7
+Training loss: 2.518473937096089
+Validation loss: 2.8269828348754196
+
+Epoch: 5| Step: 8
+Training loss: 3.388715637100348
+Validation loss: 2.8355407184155923
+
+Epoch: 5| Step: 9
+Training loss: 3.142050955531008
+Validation loss: 2.829565254040948
+
+Epoch: 5| Step: 10
+Training loss: 3.7311378398248634
+Validation loss: 2.8296350275364235
+
+Epoch: 39| Step: 0
+Training loss: 3.157336661734416
+Validation loss: 2.826919800151111
+
+Epoch: 5| Step: 1
+Training loss: 3.4256977345150754
+Validation loss: 2.8218635505158094
+
+Epoch: 5| Step: 2
+Training loss: 3.2990209456487394
+Validation loss: 2.820482463599444
+
+Epoch: 5| Step: 3
+Training loss: 2.992036740959731
+Validation loss: 2.822219065580809
+
+Epoch: 5| Step: 4
+Training loss: 3.263588886587019
+Validation loss: 2.8181354936718526
+
+Epoch: 5| Step: 5
+Training loss: 3.5602969669393945
+Validation loss: 2.8171685906460615
+
+Epoch: 5| Step: 6
+Training loss: 2.7755595081336155
+Validation loss: 2.8147143143648545
+
+Epoch: 5| Step: 7
+Training loss: 3.1036409961304043
+Validation loss: 2.814715477455687
+
+Epoch: 5| Step: 8
+Training loss: 2.7993262434007558
+Validation loss: 2.813539882917408
+
+Epoch: 5| Step: 9
+Training loss: 3.0704148447776176
+Validation loss: 2.814108761500896
+
+Epoch: 5| Step: 10
+Training loss: 2.9313891542504598
+Validation loss: 2.814243805156014
+
+Epoch: 40| Step: 0
+Training loss: 2.9930824953200847
+Validation loss: 2.813076477036924
+
+Epoch: 5| Step: 1
+Training loss: 2.660301977526856
+Validation loss: 2.8133257475216435
+
+Epoch: 5| Step: 2
+Training loss: 3.8475188100056337
+Validation loss: 2.811652643130456
+
+Epoch: 5| Step: 3
+Training loss: 3.2302665232010015
+Validation loss: 2.809216583288661
+
+Epoch: 5| Step: 4
+Training loss: 3.1566865826803925
+Validation loss: 2.8081698994296977
+
+Epoch: 5| Step: 5
+Training loss: 2.8146961538733004
+Validation loss: 2.8087954151766983
+
+Epoch: 5| Step: 6
+Training loss: 2.7584950410246205
+Validation loss: 2.8077257157831497
+
+Epoch: 5| Step: 7
+Training loss: 3.0630941009364054
+Validation loss: 2.8052967287463546
+
+Epoch: 5| Step: 8
+Training loss: 2.955348555248232
+Validation loss: 2.808477017963345
+
+Epoch: 5| Step: 9
+Training loss: 3.351757550732756
+Validation loss: 2.8048292043057197
+
+Epoch: 5| Step: 10
+Training loss: 3.43344765136418
+Validation loss: 2.8048165717514952
+
+Epoch: 41| Step: 0
+Training loss: 3.100464902903392
+Validation loss: 2.8095464550324194
+
+Epoch: 5| Step: 1
+Training loss: 2.9004435627534235
+Validation loss: 2.81153379408331
+
+Epoch: 5| Step: 2
+Training loss: 3.7358358550433715
+Validation loss: 2.8233668252923856
+
+Epoch: 5| Step: 3
+Training loss: 2.337078109447916
+Validation loss: 2.830946074636548
+
+Epoch: 5| Step: 4
+Training loss: 2.980966268989065
+Validation loss: 2.820562648874461
+
+Epoch: 5| Step: 5
+Training loss: 3.104498945710637
+Validation loss: 2.8178956863403406
+
+Epoch: 5| Step: 6
+Training loss: 2.965039635018636
+Validation loss: 2.8056467041738697
+
+Epoch: 5| Step: 7
+Training loss: 3.6101883141175772
+Validation loss: 2.8046898619189706
+
+Epoch: 5| Step: 8
+Training loss: 2.8742457519988265
+Validation loss: 2.8019046844673077
+
+Epoch: 5| Step: 9
+Training loss: 3.3927054636615863
+Validation loss: 2.799667278054719
+
+Epoch: 5| Step: 10
+Training loss: 3.0642298270002892
+Validation loss: 2.7956361999842714
+
+Epoch: 42| Step: 0
+Training loss: 3.30166379427476
+Validation loss: 2.795462392707726
+
+Epoch: 5| Step: 1
+Training loss: 3.112067662128668
+Validation loss: 2.7939233659725318
+
+Epoch: 5| Step: 2
+Training loss: 2.716188385954101
+Validation loss: 2.7970522793835566
+
+Epoch: 5| Step: 3
+Training loss: 2.9430248169081095
+Validation loss: 2.794493780227461
+
+Epoch: 5| Step: 4
+Training loss: 2.784188593352119
+Validation loss: 2.7941225465511694
+
+Epoch: 5| Step: 5
+Training loss: 2.7868817349386954
+Validation loss: 2.799421075369399
+
+Epoch: 5| Step: 6
+Training loss: 3.4186229842614275
+Validation loss: 2.8142229023769523
+
+Epoch: 5| Step: 7
+Training loss: 3.2672312313529965
+Validation loss: 2.801434717948019
+
+Epoch: 5| Step: 8
+Training loss: 3.32760788029736
+Validation loss: 2.7912359816117065
+
+Epoch: 5| Step: 9
+Training loss: 3.0385887737805226
+Validation loss: 2.7889872938052656
+
+Epoch: 5| Step: 10
+Training loss: 3.519995926507847
+Validation loss: 2.7910371911587104
+
+Epoch: 43| Step: 0
+Training loss: 2.7526792132860893
+Validation loss: 2.789644610703416
+
+Epoch: 5| Step: 1
+Training loss: 2.934043961479703
+Validation loss: 2.789469972417923
+
+Epoch: 5| Step: 2
+Training loss: 2.849075696202695
+Validation loss: 2.7888375849931273
+
+Epoch: 5| Step: 3
+Training loss: 2.4303041515817636
+Validation loss: 2.7877490119987987
+
+Epoch: 5| Step: 4
+Training loss: 3.419972208590552
+Validation loss: 2.7895488756705396
+
+Epoch: 5| Step: 5
+Training loss: 2.7923559410209475
+Validation loss: 2.7862272479372256
+
+Epoch: 5| Step: 6
+Training loss: 3.1039110799617906
+Validation loss: 2.7863110679434833
+
+Epoch: 5| Step: 7
+Training loss: 3.3200134860764483
+Validation loss: 2.7849708528444728
+
+Epoch: 5| Step: 8
+Training loss: 3.12231604713055
+Validation loss: 2.784196543403239
+
+Epoch: 5| Step: 9
+Training loss: 3.4633693719138643
+Validation loss: 2.7860214545673805
+
+Epoch: 5| Step: 10
+Training loss: 3.8456407564219535
+Validation loss: 2.78741817754343
+
+Epoch: 44| Step: 0
+Training loss: 3.5131162381160475
+Validation loss: 2.7951354758966347
+
+Epoch: 5| Step: 1
+Training loss: 3.4163196356467105
+Validation loss: 2.8312618436191896
+
+Epoch: 5| Step: 2
+Training loss: 2.947631570534274
+Validation loss: 2.853484279135877
+
+Epoch: 5| Step: 3
+Training loss: 2.879962287496971
+Validation loss: 2.851946072382674
+
+Epoch: 5| Step: 4
+Training loss: 2.933068849459792
+Validation loss: 2.8144125129388544
+
+Epoch: 5| Step: 5
+Training loss: 3.257709748548224
+Validation loss: 2.782365687397499
+
+Epoch: 5| Step: 6
+Training loss: 3.371268717622263
+Validation loss: 2.7794660963324063
+
+Epoch: 5| Step: 7
+Training loss: 3.1228395241711646
+Validation loss: 2.7790473215606455
+
+Epoch: 5| Step: 8
+Training loss: 2.936839252586397
+Validation loss: 2.781402887868714
+
+Epoch: 5| Step: 9
+Training loss: 2.931154255228533
+Validation loss: 2.779005466073712
+
+Epoch: 5| Step: 10
+Training loss: 2.9205302851719317
+Validation loss: 2.7847825296829294
+
+Epoch: 45| Step: 0
+Training loss: 3.1560218653048375
+Validation loss: 2.7831454849247375
+
+Epoch: 5| Step: 1
+Training loss: 2.529565603937325
+Validation loss: 2.7849902758947094
+
+Epoch: 5| Step: 2
+Training loss: 3.5640865607747676
+Validation loss: 2.7813405870998165
+
+Epoch: 5| Step: 3
+Training loss: 3.0502669796020454
+Validation loss: 2.782497091846557
+
+Epoch: 5| Step: 4
+Training loss: 2.753007804463247
+Validation loss: 2.78161769002061
+
+Epoch: 5| Step: 5
+Training loss: 3.4379151527094156
+Validation loss: 2.7792906930268533
+
+Epoch: 5| Step: 6
+Training loss: 2.9535643235656712
+Validation loss: 2.778484081247961
+
+Epoch: 5| Step: 7
+Training loss: 2.8784558631013875
+Validation loss: 2.774949137679691
+
+Epoch: 5| Step: 8
+Training loss: 2.695850794016812
+Validation loss: 2.774367040084717
+
+Epoch: 5| Step: 9
+Training loss: 3.4879832380749476
+Validation loss: 2.773131575257089
+
+Epoch: 5| Step: 10
+Training loss: 3.4642996893082603
+Validation loss: 2.774732594168872
+
+Epoch: 46| Step: 0
+Training loss: 3.146799120324384
+Validation loss: 2.775282928210114
+
+Epoch: 5| Step: 1
+Training loss: 3.5447466005652983
+Validation loss: 2.7793425724716796
+
+Epoch: 5| Step: 2
+Training loss: 2.859860905285956
+Validation loss: 2.7855926067374033
+
+Epoch: 5| Step: 3
+Training loss: 2.7830628905186074
+Validation loss: 2.787572769693315
+
+Epoch: 5| Step: 4
+Training loss: 3.5099639751617957
+Validation loss: 2.805015830617764
+
+Epoch: 5| Step: 5
+Training loss: 3.3404547595332406
+Validation loss: 2.8021239926456687
+
+Epoch: 5| Step: 6
+Training loss: 2.757136448458121
+Validation loss: 2.783086338496623
+
+Epoch: 5| Step: 7
+Training loss: 3.242016597058162
+Validation loss: 2.768907728327247
+
+Epoch: 5| Step: 8
+Training loss: 2.730944241446562
+Validation loss: 2.7671771214506986
+
+Epoch: 5| Step: 9
+Training loss: 3.1137442250544694
+Validation loss: 2.7664694178566935
+
+Epoch: 5| Step: 10
+Training loss: 2.8421178472623283
+Validation loss: 2.7653015607587874
+
+Epoch: 47| Step: 0
+Training loss: 2.89660191570762
+Validation loss: 2.7682428833207586
+
+Epoch: 5| Step: 1
+Training loss: 2.805754052327919
+Validation loss: 2.77039670190971
+
+Epoch: 5| Step: 2
+Training loss: 3.5726912773078587
+Validation loss: 2.771614487038528
+
+Epoch: 5| Step: 3
+Training loss: 2.7572679711507706
+Validation loss: 2.771797980658777
+
+Epoch: 5| Step: 4
+Training loss: 2.4645094365198346
+Validation loss: 2.775048262392529
+
+Epoch: 5| Step: 5
+Training loss: 2.7846965223116347
+Validation loss: 2.7730846706903876
+
+Epoch: 5| Step: 6
+Training loss: 3.4859351527036444
+Validation loss: 2.7753053602284723
+
+Epoch: 5| Step: 7
+Training loss: 3.3802936153302254
+Validation loss: 2.7715425406387006
+
+Epoch: 5| Step: 8
+Training loss: 2.76966399182726
+Validation loss: 2.770901430193617
+
+Epoch: 5| Step: 9
+Training loss: 3.1825286394075722
+Validation loss: 2.7696186113625174
+
+Epoch: 5| Step: 10
+Training loss: 3.7943596690959485
+Validation loss: 2.7660021150835212
+
+Epoch: 48| Step: 0
+Training loss: 2.9429744273820337
+Validation loss: 2.7649216176621656
+
+Epoch: 5| Step: 1
+Training loss: 2.8299984285599624
+Validation loss: 2.7597418664769813
+
+Epoch: 5| Step: 2
+Training loss: 2.4541290560972366
+Validation loss: 2.7602617557373152
+
+Epoch: 5| Step: 3
+Training loss: 3.654464155127041
+Validation loss: 2.759108167831517
+
+Epoch: 5| Step: 4
+Training loss: 2.7882932141646686
+Validation loss: 2.756699893157129
+
+Epoch: 5| Step: 5
+Training loss: 3.56430570114652
+Validation loss: 2.757897176171459
+
+Epoch: 5| Step: 6
+Training loss: 3.38786379278908
+Validation loss: 2.757145403540078
+
+Epoch: 5| Step: 7
+Training loss: 3.113774087109044
+Validation loss: 2.759534619125577
+
+Epoch: 5| Step: 8
+Training loss: 3.5484150639324006
+Validation loss: 2.7653184649840385
+
+Epoch: 5| Step: 9
+Training loss: 2.690570585296526
+Validation loss: 2.7595452553628856
+
+Epoch: 5| Step: 10
+Training loss: 2.6037001433523255
+Validation loss: 2.7602537850455304
+
+Epoch: 49| Step: 0
+Training loss: 2.867264333417906
+Validation loss: 2.7583547428188626
+
+Epoch: 5| Step: 1
+Training loss: 3.7047485140599217
+Validation loss: 2.753938223802211
+
+Epoch: 5| Step: 2
+Training loss: 2.6623212655837007
+Validation loss: 2.754493722281908
+
+Epoch: 5| Step: 3
+Training loss: 3.030356049218339
+Validation loss: 2.7508061822356633
+
+Epoch: 5| Step: 4
+Training loss: 3.3002660586291004
+Validation loss: 2.752177985953799
+
+Epoch: 5| Step: 5
+Training loss: 2.8750660100905385
+Validation loss: 2.750978912755909
+
+Epoch: 5| Step: 6
+Training loss: 3.043986198143366
+Validation loss: 2.7495358076262355
+
+Epoch: 5| Step: 7
+Training loss: 2.9154115065148756
+Validation loss: 2.748531702815761
+
+Epoch: 5| Step: 8
+Training loss: 3.469125813238986
+Validation loss: 2.746546516814149
+
+Epoch: 5| Step: 9
+Training loss: 2.685294910054999
+Validation loss: 2.7464674805301437
+
+Epoch: 5| Step: 10
+Training loss: 3.158933801530379
+Validation loss: 2.744379368506864
+
+Epoch: 50| Step: 0
+Training loss: 3.332974764293745
+Validation loss: 2.74596067913786
+
+Epoch: 5| Step: 1
+Training loss: 2.672479572271598
+Validation loss: 2.7460221842988433
+
+Epoch: 5| Step: 2
+Training loss: 3.538843952361426
+Validation loss: 2.75253747305559
+
+Epoch: 5| Step: 3
+Training loss: 2.419390874922438
+Validation loss: 2.752022278397313
+
+Epoch: 5| Step: 4
+Training loss: 3.1862953752090553
+Validation loss: 2.758991856477096
+
+Epoch: 5| Step: 5
+Training loss: 3.3631311044175023
+Validation loss: 2.7725565829543477
+
+Epoch: 5| Step: 6
+Training loss: 3.4744611583058704
+Validation loss: 2.787959041070728
+
+Epoch: 5| Step: 7
+Training loss: 3.541757260828148
+Validation loss: 2.743201885592656
+
+Epoch: 5| Step: 8
+Training loss: 2.4691842578472025
+Validation loss: 2.739181134059548
+
+Epoch: 5| Step: 9
+Training loss: 2.643869246731206
+Validation loss: 2.738921936991051
+
+Epoch: 5| Step: 10
+Training loss: 2.8166860158432505
+Validation loss: 2.7402480602679153
+
+Testing loss: 2.952464617988143
