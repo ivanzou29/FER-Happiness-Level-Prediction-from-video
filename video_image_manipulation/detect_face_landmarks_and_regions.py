@@ -5,6 +5,7 @@ from imutils import face_utils
 import imutils
 import os
 
+# This script contains the reference to: https://www.pyimagesearch.com/2017/04/10/detect-eyes-nose-lips-jaw-dlib-opencv-python/ on dlib landmark detection
 
 def detect_face_and_regions(img_dir, img_name):
     # initialize dlib's face detector (HOG-based) and then create
